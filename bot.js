@@ -422,18 +422,24 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
         // ==================== Greetings ====================
-        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
-                await conn.sendMessage(msg.key.remoteJid, gb.message, MessageType.text);
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-                await conn.sendMessage(msg.key.remoteJid, gb.message, MessageType.text);
+               let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
             return;
         }
