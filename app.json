@@ -21,6 +21,11 @@
             "required": true,
             "value": "en"
         },
+        "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "false"
+        },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
