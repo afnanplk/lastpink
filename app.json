@@ -1,11 +1,11 @@
 {
-    "name": "WhatsAsenaDuplicated",
-    "description": "WhatsAsena project - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.hizliresim.com/6Bbj7i.jpg",
+    "name": "PINKY BY PLK",
+    "description": "pinky  - re-edited from asena. World’s first UserBot made for WhatsApp.",
+    "logo": "https://avatars.githubusercontent.com/u/83832372?v=4",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated",
-    "website":   "https://t.me/phaticusthiccy",
-    "success_url": "https://t.me/AsenaSupport",
+    "repository": "https://github.com/afnanplk/pinky-v1",
+    "website":   "under maintenance",
+    "success_url": "under maintenance",
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
@@ -17,9 +17,9 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot language. Azerice => az, English => en, Türkçe => tr, Malayalam => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
+            "description": "only english language is available",
             "required": true,
-            "value": "TR"
+            "value": "en"
         },
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
@@ -29,7 +29,7 @@
         "AUTO_BİO": {
             "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
             "required": true,
-            "value": "false"
+            "value": "true"
         },
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
@@ -106,12 +106,12 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "i am alive  \n\n ```coded by afnan pallikkel```"
         },
         "BAN_MESSAGE": {
-            "description": "Customizable Ban Message! Use => default, to change back.",
+            "description": "Customizable kick Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "good bye"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
@@ -119,9 +119,9 @@
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "Customizable Kickme Message! Use => default, to change back.",
+            "description": "Customizable leave Message! Use => default, to change back.",
             "required": false,
-            "value": "default"
+            "value": "\n ```its time to leave bye bye``` \n"
         },
         "PROMOTE_MESSAGE": {
             "description": "Customizable Promote Message! Use => default, to change back.",
