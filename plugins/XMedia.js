@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
    
     }));
     
-    Asena.addCommand({pattern: 'codtts', fromMe: true, desc: 'language code to change the voice in .tts & also for .trt translation'}, (async (message, match) => {  
+    Asena.addCommand({pattern: 'codtts', fromMe: false, desc: 'language code to change the voice in .tts & also for .trt translation'}, (async (message, match) => {  
        
         await message.sendMessage('\n https://drive.google.com/file/d/1r4l7QcdEiu9wAOgqxTGB6KWBVsg_U1cu/view?usp=drivesdk \n');
         
@@ -938,7 +938,7 @@ else if (Config.WORKTYPE == 'public') {
    
     }));
      
-     Asena.addCommand({pattern: 'codtts', fromMe: true, desc: 'language code to change the voice in .tts & also for .trt translation'}, (async (message, match) => {  
+     Asena.addCommand({pattern: 'codtts', fromMe: false, desc: 'language code to change the voice in .tts & also for .trt translation'}, (async (message, match) => {  
        
         await message.sendMessage('\n https://drive.google.com/file/d/1r4l7QcdEiu9wAOgqxTGB6KWBVsg_U1cu/view?usp=drivesdk \n');
         
