@@ -23,8 +23,8 @@ Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage
               answer,
             } = response.data
 
-            const msg = `*Soal:* ${soal}
-*Jawaban Brainly:* ${jawaban.replace(/1Question/g, '*(1) Question*').replace(/2Question/g, '*(2) Question*').replace(/3Question/g, '*(3) Question*').replace(/Answer/g, '*Answer*').replace(/Brainly Found/g, '')}`
+            const msg = `*Soal:* ${question}
+*Answer from Brainly:* ${answer.replace(/1Question/g, '*(1) Question*').replace(/2Question/g, '*(2) Question*').replace(/3Question/g, '*(3) Question*').replace(/Answer/g, '*Answer*').replace(/Brainly Found/g, '')}`
             await message.client.sendMessage(message.jid, msg, MessageType.text)
            })
       },
