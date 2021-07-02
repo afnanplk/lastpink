@@ -19,8 +19,8 @@ Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage
           .get(`https://api.xteam.xyz/brainly?APIKEY=10c4105200edc0f0&soal=${Soal}`)
           .then(async (response) => {
             const {
-              soal,
-              jawaban,
+              question,
+              answer,
             } = response.data
 
             const msg = `*Soal:* ${soal}
