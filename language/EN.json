@@ -183,12 +183,12 @@
             "TTS_DESC": "It converts text to sound.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
             "SONG_DESC": "Uploads the song you wrote.",
-            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
+            "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song open your wings```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "\n```🎧 headset edth ready aayi ninno...```\n",
             "UPLOADING_SONG": "\n```paatt dhe ethi poi...```\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=t1r_tmgQago```",
             "DOWNLOADING_VIDEO": "```ippo kond veravve...```",
             "UPLOADING_VIDEO": "\n```inna pidicho...```\n",
             "YT_DESC": "It searchs on YouTube.",
@@ -459,7 +459,7 @@
             "NOT_FOUND": "*Media Not Found!*"
         },
         "github": {
-            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",
+            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github afnanplk",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
@@ -482,7 +482,7 @@
         },
               "weather": {
             "WEATHER_DESC": "Shows the weather.",
-            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather New Delhi```",
+            "NEED_LOCATION": "* Please write a location!*\n*Example:* ```.weather kozhikode```",
             "LOCATION": "Location",
             "LAT": "Lattitude",
             "LONG": "Longitude",
