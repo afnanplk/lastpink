@@ -154,71 +154,33 @@ Asena.addCommand({pattern: 'promote ?(.*)', fromMe: true, dontAddCommandList: tr
     }
 }));
 
-Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
+Asena.addCommand({pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC, dontAddCommandList: true}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
-    if (Config.DEMOTEMSG == 'default') {
-        if (message.reply_message !== false) {
-            var checkAlready = await checkImAdmin(message, message.reply_message.data.participant.split("@")[0]);
+    if (message.reply_message !== false) {
+        var checkAlready = await checkImAdmin(message, message.reply_message.data.participant.split('@')[0]);
+        if (!checkAlready) {
+            return await message.client.sendMessage(message.jid,Lang.ALREADY_NOT_ADMIN, MessageType.text);
+        }
+
+        await message.client.sendMessage(message.jid,'@' + message.reply_message.data.participant.split('@')[0] + Lang.DEMOTED, MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
+        await message.client.groupDemoteAdmin(message.jid, [message.reply_message.data.participant]);
+    } else if (message.reply_message === false && message.mention !== false) {
+        var etiketler = '';
+        message.mention.map(async (user) => {
+            var checkAlready = await checkImAdmin(message, user);
             if (!checkAlready) {
                 return await message.client.sendMessage(message.jid,Lang.ALREADY_NOT_ADMIN, MessageType.text);
             }
-            await message.client.sendMessage(
-                message.jid, 
-                fs.readFileSync("./uploads/plkk.mp4"),
-                MessageType.video, 
-                { mimetype: Mimetype.mp4, caption: "```Admin Tarafından Yetkin Düşürüldü!```" }
-            )
-            await message.client.sendMessage(message.jid,'```Bol Şans``` ' + '@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
-            await message.client.groupDemoteAdmin(message.jid, [message.reply_message.data.participant]);
-        } else if (message.reply_message === false && message.mention !== false) {
-            var etiketler = '';
-            message.mention.map(async (user) => {
-                var checkAlready = await checkImAdmin(message, user);
-                if (!checkAlready) {
-                    return await message.client.sendMessage(message.jid,Lang.ALREADY_NOT_ADMIN, MessageType.text);
-                }
             
-                etiketler += '@' + user.split("@")[0];
-            });
-            await message.client.sendMessage(
-                message.jid, 
-                fs.readFileSync("./uploads/plkk.mp4"),
-                MessageType.video, 
-                { mimetype: Mimetype.mp4, caption: "```Admin Tarafından Yetkin Düşürüldü!```" }
-            )
-            await message.client.sendMessage(message.jid,'```Bol Şans``` ' + etiketler + ' 😈', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
-            await message.client.groupDemoteAdmin(message.jid, message.mention);
-        } else {
-            return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
-        }
-    }
-    else {
-        if (message.reply_message !== false) {
-            var checkAlready = await checkImAdmin(message, message.reply_message.data.participant.split('@')[0]);
-            if (!checkAlready) {
-                return await message.client.sendMessage(message.jid,Lang.ALREADY_NOT_ADMIN, MessageType.text);
-            }
+            etiketler += '@' + user.split('@')[0] + ',';
+        });
 
-            await message.client.sendMessage(message.jid,'@' + message.reply_message.data.participant.split('@') + Config.DEMOTEMSG, MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
-            await message.client.groupDemoteAdmin(message.jid, [message.reply_message.data.participant]);
-        } else if (message.reply_message === false && message.mention !== false) {
-            var etiketler = '';
-            message.mention.map(async (user) => {
-                var checkAlready = await checkImAdmin(message, user);
-                if (!checkAlready) {
-                    return await message.client.sendMessage(message.jid,Lang.ALREADY_NOT_ADMIN, MessageType.text);
-                }
-            
-                etiketler += '@' + user.split('@')[0] + ',';
-            });
-
-            await message.client.sendMessage(message.jid,etiketler + Config.DEMOTEMSG, MessageType.text, {contextInfo: {mentionedJid: message.mention}});
-            await message.client.groupDemoteAdmin(message.jid, message.mention);
-        } else {
-            return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
-        }
+        await message.client.sendMessage(message.jid,etiketler + Lang.DEMOTED, MessageType.text, {contextInfo: {mentionedJid: message.mention}});
+        await message.client.groupDemoteAdmin(message.jid, message.mention);
+    } else {
+        return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
     }
 }));
 
