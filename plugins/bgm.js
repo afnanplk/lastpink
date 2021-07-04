@@ -12,7 +12,7 @@ const heroku = new Heroku({
 });
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
-   var h_dsc = ''
+   var l_dsc = ''
     var alr_on = ''
     var alr_off = ''
     var BGM_on = ''
@@ -80,7 +80,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_on = 'bgm option turned on'
         BGM_off = 'bgm option turned off'
     }
-    Asena.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: h_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+    Asena.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
