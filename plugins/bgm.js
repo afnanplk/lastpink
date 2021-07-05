@@ -25,7 +25,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_off = 'bgm option turned off'
     }
     if (config.LANG == 'EN') {
-        l_dsc = 'Activates the Antilink tool.'
+        l_dsc = 'turn on and turn of bgm. -bot owner command'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
         BGM_on = 'bgm option turned on!'
