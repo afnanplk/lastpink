@@ -893,7 +893,59 @@ else if (config.WORKTYPE == 'public') {
             return;
     
         let 
+            LANG = 'ja',
+            ttsMessage = match[1],
+            SPEED = 1.0
+
+        if(langMatch = match[1].match("\\{([a-z]{2})\\}")) {
+            LANG = langMatch[1]
+            ttsMessage = ttsMessage.replace(langMatch[0], "")
+        } 
+        if(speedMatch = match[1].match("\\{([0].[0-9]+)\\}")) {
+            SPEED = parseFloat(speedMatch[1])
+            ttsMessage = ttsMessage.replace(speedMatch[0], "")
+        }
+    
+        var buffer = await googleTTS.synthesize({
+            text: ttsMessage,
+            voice: LANG
+        });
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
+    }));
+    
+    Asena.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
+
+        if(match[1] === undefined || match[1] == "")
+            return;
+    
+        let 
             LANG = 'ml',
+            ttsMessage = match[1],
+            SPEED = 1.0
+
+        if(langMatch = match[1].match("\\{([a-z]{2})\\}")) {
+            LANG = langMatch[1]
+            ttsMessage = ttsMessage.replace(langMatch[0], "")
+        } 
+        if(speedMatch = match[1].match("\\{([0].[0-9]+)\\}")) {
+            SPEED = parseFloat(speedMatch[1])
+            ttsMessage = ttsMessage.replace(speedMatch[0], "")
+        }
+    
+        var buffer = await googleTTS.synthesize({
+            text: ttsMessage,
+            voice: LANG
+        });
+        await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
+    }));
+    
+    Asena.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
+
+        if(match[1] === undefined || match[1] == "")
+            return;
+    
+        let 
+            LANG = 'en',
             ttsMessage = match[1],
             SPEED = 1.0
 
