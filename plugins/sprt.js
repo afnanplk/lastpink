@@ -6,8 +6,8 @@ const axios = require('axios');
 Asena.addCommand({pattern: 'pink', fromMe: false}, (async (message, match) => {
 
     var r_text = new Array ();    
-r_text[0] = "to chat with me use \n\n.molu <your text> \n";
-r_text[1] = "enne kurich oru 2 vari para";
+r_text[0] = "\nEda eda, mandankonappi.. Nee enne kooduthal mandan aakkatheda\n";
+r_text[1] = "pinkye tholpikkaan ningalkavilla. Jeevitathil pinkiye tholpichittundu… palarum… palavattom…😥😥 aarellum aaa sed bgm onn iduo...";
 r_text[2] = "pinky says i love you 😘";
 r_text[3] = "what will you do if pinky stop working";
 r_text[4] = "hi, how are you";
