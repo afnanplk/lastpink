@@ -59,7 +59,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         let regex2 = new RegExp('https://chat')
         let regex3 = new RegExp('https://meet')
         let regex4 = new RegExp('https://t.co')
-        let regex5 = new RegExp('https://t,me')
+        let regex5 = new RegExp('https://t.me')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
