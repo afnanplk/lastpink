@@ -41,7 +41,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         THERI_off = 'bgm option turned off'
     }
    
-    Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm no / yes' }, (async (message, match) => {
+    Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
         if (match[1] == 'yes') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
