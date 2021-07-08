@@ -31,6 +31,11 @@
             "required": true,
             "value": "false"
         },
+         "THERI_KICK": {
+            "description": "THERI VILICHAL KICK IF TRUE",
+            "required": true,
+            "value": "false"
+        },
         "AUTO_BİO": {
             "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
             "required": true,
