@@ -46,7 +46,7 @@ notheri()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*ith njanum vilikkilla neeyum villikilla \n 😅 arod parayan aar kelkaan *'
+if (Config.LANG == 'EN') ldc = '*ith njanum vilikkilla neeyum villikilla* \n 😅 *arod parayan aar kelkaan* \n *edth purath aakiyathin shesham aan parayunne* 😅😅'
 if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
@@ -60,6 +60,11 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         let regex3 = new RegExp('thayolli')
         let regex4 = new RegExp('thaayolli')
         let regex5 = new RegExp('thayyoli')
+        let regex6 = new RegExp('Thayoli')
+        let regex7 = new RegExp('Thaayoli')
+        let regex8 = new RegExp('Thayolli')
+        let regex9 = new RegExp('Thaayolli')
+        let regex10 = new RegExp('Thayyoli')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
@@ -100,5 +105,45 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
+         else if (regex6.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        }
+         else if (regex7.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        }
+         else if (regex8.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        }
+         else if (regex9.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        }
+         else if (regex10.test(message.message)) {
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
+        }      
     }
 }));
