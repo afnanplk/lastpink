@@ -21,9 +21,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 }
 
 Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
-    var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.ADMİN,MessageType.text);
-
+   
     if (!message.reply_message) {
         if (match[1] !== '') {
             grup = await message.client.groupMetadata(message.jid);
@@ -43,7 +41,7 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: tru
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '🙍🏻‍♂️ @' + uye.id.split('@')[0] + '\n\n';
+                    mesaj += '\n    🙍🏻‍♂️ @' + uye.id.split('@')[0] + '\n\n';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
