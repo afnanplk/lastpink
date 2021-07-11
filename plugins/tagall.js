@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: tru
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '🙍🏻‍♂️ @' + uye.id.split('@')[0] + '\n';
+                    mesaj += '🙍🏻‍♂️ @' + uye.id.split('@')[0] + '\n\n';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
