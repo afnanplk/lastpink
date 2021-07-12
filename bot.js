@@ -82,7 +82,7 @@ async function whatsAsena () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('✅ Pinky Login information updated!')
+            chalk.blueBright.italic('✅ Login information updated!')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -102,11 +102,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('✅Pinky Login successful!')
+            chalk.green.bold('✅ Login successful!')
         );
 
         console.log(
-            chalk.blueBright.italic('⬇️ Pinky Installing external plugins...')
+            chalk.blueBright.italic('⬇️ Installing external plugins...')
         );
 
         var plugins = await plugindb.PluginDB.findAll();
@@ -122,7 +122,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️ Pinky Installing plugins...')
+            chalk.blueBright.italic('⬇️  Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -132,7 +132,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Pinky Plugins installed!')
+            chalk.green.bold('✅ Plugins installed!')
         );
     });
     
@@ -146,24 +146,18 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
 
-         if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
-                let pp
-                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await conn.sendMessage(msg.key.remoteJid, gb.message, MessageType.text);
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-               let pp
-                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+                await conn.sendMessage(msg.key.remoteJid, gb.message, MessageType.text);
             }
             return;
         }
@@ -236,7 +230,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [PINKY 🐱 ] --*' + 
+                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [pinky] --*' + 
+                                    '\n*WhatsAsena an error has occurred!*'+
+                                    '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
+                                    '\n_You can write to our Telegram group for help._' +
+                                    '\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text);
                             }
