@@ -713,7 +713,7 @@ Asena.addCommand({pattern: '4neon ?(.*)', fromMe: wk, dontAddCommandList: true},
               };
 
               await download(`${data}`, '/root/WhatsAsenaDuplicated/t4n.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.jpg'), MessageType.image, { caption: 'inna pidi nanba })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/WhatsAsenaDuplicated/t4n.jpg'), MessageType.image, { caption: 'inna pidi nanba' })
               })
           } catch(err) { 
               console.log(err)
