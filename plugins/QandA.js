@@ -33,7 +33,7 @@ Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: true, desc: brainly, usage:
     )
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage: usage }, async (message, match) => {
 
