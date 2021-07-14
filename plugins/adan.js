@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
     });
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
         Asena.addCommand({pattern: 'adan ?(.*)', desc: adzan, usage: usage, fromMe: false}, async (message, match) => {
 
