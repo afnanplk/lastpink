@@ -7,6 +7,7 @@ WhatsAsenaDuplicated
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
+const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
@@ -46,7 +47,7 @@ Asena.addCommand({pattern: 'pquote ?(.*)', fromMe: true, dontAddCommandList: tru
 });
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: Lang.QUOTE_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
