@@ -1,6 +1,7 @@
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
+const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
@@ -30,7 +31,7 @@ Asena.addCommand({pattern: 'sweather ?(.*)', fromMe: true, desc: "Gives you the 
 });
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'sweather ?(.*)', fromMe: false, desc: "Gives you the weekly interpretations of space weather observations provided by the Space Weather Research Center (SWRC) for a p."}, async (message, match) => {
 	if (match[1] === 'where is it?') return await message.reply("wait...");
