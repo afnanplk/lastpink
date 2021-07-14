@@ -7,6 +7,7 @@ const Asena = require('../events');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
+const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
@@ -218,7 +219,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: true, dontAddCommandList: true
     }));
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'moretxt', fromMe: false, desc: 'more txtit commands'}, (async (message, match) => {
   
