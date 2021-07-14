@@ -1,7 +1,8 @@
 const Asena = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
-//LyFE
+const Config = require('../config');
+
 
 if (Config.WORKTYPE == 'private') {
 	
@@ -33,7 +34,7 @@ Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: "Shows movie info
 }));
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 	
 Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
 	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
