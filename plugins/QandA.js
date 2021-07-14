@@ -11,7 +11,7 @@ const butuh = "```Enter the Question!```"
 
 if (Config.WORKTYPE == 'private') {
 
-Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage: usage }, async (message, match) => {
+Asena.addCommand({ pattern: 'brainly ?(.*)', fromMe: true, desc: brainly, usage: usage }, async (message, match) => {
 
         const Soal = match[1]
         
