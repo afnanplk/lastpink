@@ -17,7 +17,7 @@ const renek = "```Not found the city!```"
 
 if (Config.WORKTYPE == 'private') {
 
-        Asena.addCommand({pattern: 'adan ?(.*)', desc: adzan, usage: usage, fromMe: false}, async (message, match) => {
+        Asena.addCommand({pattern: 'adan ?(.*)', desc: adzan, usage: usage, fromMe: true}, async (message, match) => {
 
 	    if (match[1] === '') return await message.reply(butuh);
 	    const url = `https://api.pray.zone/v2/times/today.json?city=${match[1]}`;
