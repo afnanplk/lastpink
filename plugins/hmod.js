@@ -31,7 +31,7 @@ Asena.addCommand({pattern: 'modapp ?(.*)', fromMe: true, desc: 'get mod apk from
 });
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 
 Asena.addCommand({pattern: 'modapp ?(.*)', fromMe: false, desc: 'get mod apk from happymod' , dontAddCommandList: true }, async (message, match) => {
