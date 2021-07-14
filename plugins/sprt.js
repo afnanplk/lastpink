@@ -2,6 +2,7 @@ const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
+const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
@@ -46,7 +47,7 @@ await message.sendMessage(r_text[i]);
 }));
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'pink', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
         
