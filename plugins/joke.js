@@ -14,7 +14,7 @@ Asena.addCommand({pattern: 'joke ?(.*)', fromMe: true, desc: Lang.JOKE_DESC}, as
 		const response = await got(url);
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🗣️ ' + Lang.JOKE +'* ```' + json.setup + '```\n\n' +
-		'*😆' + Lang.PUNCHLINE +'* ```' + json.punchline+ '```\n', MessageType.text);
+		'*😆' + Lang.PUNCHLINE +'* ```' + json.punchline+ '```\n\n 😂njan oru killadi thanne ellarum chirikku guys😂\n', MessageType.text);
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
@@ -30,7 +30,7 @@ Asena.addCommand({pattern: 'joke ?(.*)', fromMe: false, desc: Lang.JOKE_DESC}, a
 		const response = await got(url);
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🗣️ ' + Lang.JOKE +'* ```' + json.setup + '```\n\n' +
-		'*😆' + Lang.PUNCHLINE +'* ```' + json.punchline+ '```\n', MessageType.text);
+		'*😆' + Lang.PUNCHLINE +'* ```' + json.punchline+ '```\n\n 😂njan oru killadi thanne ellarum chirikku guys😂\n', MessageType.text);
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
