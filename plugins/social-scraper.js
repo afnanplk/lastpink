@@ -38,37 +38,7 @@ if (cn.WORKTYPE == 'private') {
     });
 }
 
-    /*
-    Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
-        const userName = match[1]
-
-        if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
-
-        await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
-
-        await axios
-          .get(`https://shinoa-rest.herokuapp.com/dl/tiktok?link=${userName}`)
-          .then(async (response) => {
-            const {
-              data,
-            } = response.data
-
-            const profileBuffer = await axios.get(data.mp4, {
-              responseType: 'arraybuffer',
-            })
-
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-              caption: 'Made by WhatsAsena',
-            })
-          })
-          .catch(
-            async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
-          )
-      },
-    )
-    */
-}
 else if (cn.WORKTYPE == 'public') {
 
     Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: 'instagram profile' }, async (message, match) => {
