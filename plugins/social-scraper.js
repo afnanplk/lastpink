@@ -22,13 +22,13 @@ const nobs = "no"
 
 if (cn.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true, desc: 'instagram profile' }, async (message, match) => {
+    Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: 'instagram profile' }, async (message, match) => {
 
         const userName = match[1]
 
-        if (userName === '') return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+        if (userName === '') return await message.sendMessage(errorMessage('NEED USERNAME'))
 
-        await message.sendMessage(infoMessage(Lang.LOADING))
+        await message.sendMessage(infoMessage('LOADING'))
 
         await axios.get(`https://docs-jojo.herokuapp.com/api/stalk?username=${userName}`).then(async (response) => {
 
@@ -36,15 +36,16 @@ if (cn.WORKTYPE == 'private') {
 
             const profileBuffer = await axios.get(profile_pic_url_hd, { responseType: 'arraybuffer' })
 
-            const msg = `*${Lang.NAME}*: ${full_name} \n*${Lang.USERNAME}*: ${username} \n*${Lang.BIO}*: ${biography} \n*${Lang.FOLLOWERS}*: ${edge_followed_by.count} \n*${Lang.FOLLOWS}*: ${edge_follow.count} \n*${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC} \n*Hesap Türü:* ${is_verified ? vf : novf} \n*İşletme Hesabı mı?:* ${is_business_account ? bs : nobs} \n*Kategori:* ${category_name} \n*Post Sayısı:* ${edge_owner_to_timeline_media.count}`
+            const msg = `*${'NAME'}*: ${full_name} \n*${'USERNAME'}*: ${username} \n*${'BIO'}*: ${biography} \n*${'FOLLOWERS'}*: ${edge_followed_by.count} \n*${'FOLLOWS'}*: ${edge_follow.count} \n*${'ACCOUNT'}*: ${is_private ? 'HIDDEN' : 'PUBLIC'} \n*Hesap Türü:* ${is_verified ? vf : novf} \n*İşletme Hesabı mı?:* ${is_business_account ? bs : nobs} \n*Kategori:* ${category_name} \n*Post Sayısı:* ${edge_owner_to_timeline_media.count}`
 
             await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: msg })
 
         }).catch(async (err) => {
-            await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))
+            await message.sendMessage(errorMessage('NOT_FOUND' + userName))
         })
     });
 }
+
     /*
     Asena.addCommand({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
@@ -82,7 +83,7 @@ else if (cn.WORKTYPE == 'public') {
 
         const userName = match[1]
 
-        if (userName === '') return await message.sendMessage(errorMessage(Lang.NEED_WORD))
+        if (userName === '') return await message.sendMessage(errorMessage('NEED USERNAME'))
 
         await message.sendMessage(infoMessage('LOADING'))
 
