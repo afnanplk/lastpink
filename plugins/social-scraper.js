@@ -3,11 +3,20 @@ Telegram: t.me/phaticusthiccy
 Instagram: www.instagram.com/kyrie.baran
 */
 
-const Asena = require('../events')
-const { MessageType } = require('@adiwajshing/baileys')
-const axios = require('axios')
-const cn = require('../config');
-
+const Asena = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
+const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
+const solenolyrics= require("solenolyrics"); 
+const google = require("googlethis");
+const playstore = require("playstore-scraper");
+const Sea = require('search-engine-client');
+const ffmpeg = require('fluent-ffmpeg');
+const TinyURL = require('tinyurl');
+const fs = require('fs');
+const Language = require('../language');
+const Lang = Language.getString('instagram')
+const { errorMessage, infoMessage } = require('../helpers')
 const Language = require('../language')
 const { errorMessage, infoMessage } = require('../helpers')
 const Lang = Language.getString('instagram')
