@@ -944,6 +944,11 @@ else if (Config.WORKTYPE == 'public') {
         
     })); 
     
+     Asena.addCommand({on: 'plk', fromMe: false, deleteCommand: false}, (async (message, match) => {
+        
+      await message.sendMessage('\n ya he is the bot owner so what..? \n');  
+    }));
+    
     Asena.addCommand({pattern: 'x4mp4', fromMe: false, dontAddCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
