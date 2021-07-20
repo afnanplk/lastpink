@@ -3,7 +3,7 @@
     "description": "pinky  - re-edited from asena. World’s first UserBot made for WhatsApp.",
     "logo": "https://avatars.githubusercontent.com/u/83832372?v=4",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/afnanplk/pinky-v1",
+    "repository": "https://github.com/afnanplk/lastpink",
     "website":   "under maintenance",
     "success_url": "under maintenance",
     "stack": "container",
@@ -32,7 +32,7 @@
             "value": "false"
         },
          "THERI_KICK": {
-            "description": "THERI VILICHAL KICK IF TRUE",
+            "description": "THERI VILICHAL KICK IF TRUE , just keep it false as this option is under maintanance ",
             "required": true,
             "value": "false"
         },
