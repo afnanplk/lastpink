@@ -17,7 +17,7 @@ const Lang = Language.getString('unvoice'); // Language support
 
 if (Config.WORKTYPE == 'private') {
 
-  Asena.addCommand({pattern: 'unvoice ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+  Asena.addCommand({pattern: 'U ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
@@ -107,7 +107,7 @@ Asena.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
 }
 else if (Config.WORKTYPE == 'public') {
 
-   Asena.addCommand({pattern: 'unvoice ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+   Asena.addCommand({pattern: 'U ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
