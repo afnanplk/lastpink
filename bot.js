@@ -15,6 +15,7 @@ const {Message, StringSession, Image, Video} = require('./whatsasena/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
+const axios = require('axios');
 
 // Sql
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
