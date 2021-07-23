@@ -31,6 +31,11 @@
             "required": true,
             "value": "false"
         },
+         "STICKER_REPLY": {
+            "description": "if you need Automatic sticker reply type'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },  
          "THERI_KICK": {
             "description": "THERI VILICHAL KICK IF TRUE , just keep it false as this option is under maintanance ",
             "required": true,
