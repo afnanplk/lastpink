@@ -142,7 +142,7 @@ if(pattern.test(message.message)){
     );
 }));
 Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
-    if(Config.AUTO_STICKER){
+    if(Config.STICKERP){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
     if (!!message.mention && message.mention[0] == '919072790587@s.whatsapp.net') {
