@@ -45,12 +45,7 @@
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
             "value": "default"
-        },
-         "LIST_CMND": {
-            "description": "Change the caommand for  - .help/.list/.asena  => dont add fullstop",
-            "required": true,
-            "value": "list"
-        },
+        },    
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
             "required": true,
