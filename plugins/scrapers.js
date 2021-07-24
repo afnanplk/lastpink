@@ -989,7 +989,7 @@ else if (config.WORKTYPE == 'public') {
             mesaj += '*' + video.title + '* - ' + video.url + '\n'
         });
 
-        await message.client.sendMessage(message.jid,mesaj,quoted: message.data,MessageType.text);
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text);
         await reply.delete();
     }));
 
