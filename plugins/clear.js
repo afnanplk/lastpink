@@ -1,3 +1,9 @@
+/* Copyright (C) 2020 afnanplk.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+*/
+
+
 const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
 const Asena = require('../events');
 const Config = require('../config');
