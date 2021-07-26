@@ -5,6 +5,8 @@ you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
 Coded by @KursadHD
+
+re edited by afnanplk
 */
 
 const Asena = require('../events');
