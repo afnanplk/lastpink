@@ -1,3 +1,5 @@
+/*re edited by afnanplk
+*/
 
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
