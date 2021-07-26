@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,'Pinky Bot created by *Afnan pallikkel*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------PLK--------', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text);
         }
     }));
 }
@@ -46,7 +46,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,'Pinky Bot created by *Afnan pallikkel*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------PLK--------', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------------------', MessageType.text);
         }
     }));
 }
