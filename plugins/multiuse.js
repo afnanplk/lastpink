@@ -1,3 +1,7 @@
+/*codded by farhan-dqz
+re-edited by afnanpplk
+*/
+
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
