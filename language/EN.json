@@ -225,7 +225,7 @@
         "updater": {
             "UPDATER_DESC": "Checks the update for pinky.",
             "UPDATE": "*Your pinky is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for pinky!*\n\nChanges:\n```",
+            "NEW_UPDATE": "*New update available for pinky!*\n\nChanges:\n\n use .list for commands``` \n\n ask support group before updating or you bot might stop working \n if bot stop working you will have to re-deploy",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "Pinky Updating...",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
