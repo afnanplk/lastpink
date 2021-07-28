@@ -36,14 +36,14 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 var alllink_var = ''
 async function megalink() {
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
-        alllink_var = vars.ANTİ_LİNK
+        alllink_var = vars.ALL_LINK_BAN
     });
 }
 megalink()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*Link Detected! mone ee link ivde allowed alla appo engane , oke bye \n\n 🕊🕊*'
+if (Config.LANG == 'EN') ldc = '*Link Detected! mone ee link ivde allowed alla appo pinne engane , oke bye \n\n 🕊🕊*'
 if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
