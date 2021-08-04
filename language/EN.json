@@ -29,13 +29,13 @@
         },
         "admin": {
             "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
-            "IM_NOT_ADMIN": "*ee command run cheyaan njan admin alla!*",
-            "BANNED": "nyc ayyitt eduth veliyil kalnjitt und!",
-            "GIVE_ME_USER": "*Give me a user!*",
+            "IM_NOT_ADMIN": "ꜱᴏʀʀʏ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ",
+            "BANNED": "ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ɢʀᴏᴜᴘ",
+            "GIVE_ME_USER": "ɢɪᴠᴇ ᴍᴇ ᴀ ᴜꜱᴇʀ",
             "ADD_DESC": "Adds someone to the group.",
-            "ADDED": "added to the group!",
-            "ALREADY_PROMOTED": "```ivan admin aanallo```",
-            "PROMOTED": "```, admin akkeekn muthe!```",
+            "ADDED": "ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ",
+            "ALREADY_PROMOTED": "ʜᴇ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴅᴍɪɴ ᴏᴏᴘᴢ",
+            "PROMOTED": ", ᴄᴏɴɢʀᴀᴛᴢ ʏᴏᴜ ᴀʀᴇ ᴘʀᴏᴍᴏᴛᴇᴅ",
             "PROMOTE_DESC": "Makes any person an admin.",
             "DEMOTE_DESC": "Takes the authority of any admin.",
             "ALREADY_NOT_ADMIN": "```How can I make someone admin who is already admin?```",
@@ -76,7 +76,7 @@
         },
         "heroku": {
             "RESTART_DESC": "Restart pinky",
-            "RESTART_MSG": "```Restarting...```",
+            "RESTART_MSG": "ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴘɪɴᴋʏ",
             "SHUTDOWN_DESC": "Shutdown pinky",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
@@ -207,7 +207,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "\n*Reply to a photo or video!*\n",
-            "DOWNLOADING": "\n```sticker alle wait aak```\n"
+            "DOWNLOADING": "ᴄʀᴇᴀᴛɪɴɢ ꜱᴛɪᴄᴋᴇʀ"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
