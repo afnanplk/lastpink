@@ -399,7 +399,7 @@ if (config.WORKTYPE == 'private') {
                 return;
     
             let 
-                LANG = 'tr',
+                LANG = 'ml',
                 ttsMessage = match[1],
                 SPEED = 1.0
 
