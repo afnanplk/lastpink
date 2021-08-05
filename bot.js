@@ -1,6 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
 WhatsAsena - Yusuf Usta
-Plk 
+Plk  
 */
 
 const fs = require("fs");
