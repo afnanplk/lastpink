@@ -6,7 +6,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-Asena.addCommand({pattern: 'pink', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'song', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
         
     var r_text = new Array ();    
 r_text[0] = "\nEda eda, mandankonappi.. Nee enne kooduthal mandan aakkatheda\n";
