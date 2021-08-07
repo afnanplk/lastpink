@@ -25,10 +25,10 @@ if (Config.WORKTYPE == 'private') {
         }
 
         if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'Pinky Bot created by *Afnan pallikkel*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'ʟɪͥʏͭᴀᷤᴍᷟᴏͤʟ Bot created by *saidali*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n----------ꜱͥᴀͭɪᴅᷤᴀᷟʟͤɪ-----------', MessageType.text);
         }
     }));
 }
