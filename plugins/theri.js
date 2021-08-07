@@ -55,16 +55,16 @@ if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (therikick_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
-        let regex1 = new RegExp('thayoli')
-        let regex2 = new RegExp('thaayoli')
-        let regex3 = new RegExp('thayolli')
-        let regex4 = new RegExp('thaayolli')
-        let regex5 = new RegExp('thayyoli')
-        let regex6 = new RegExp('Thayoli')
-        let regex7 = new RegExp('Thaayoli')
-        let regex8 = new RegExp('Thayolli')
-        let regex9 = new RegExp('Thaayolli')
-        let regex10 = new RegExp('Thayyoli')
+        let regex1 = new RegExp('Thayoli')
+        let regex2 = new RegExp('poor')
+        let regex3 = new RegExp('Poor')
+        let regex4 = new RegExp('Poorimone')
+        let regex5 = new RegExp('Pooran')
+        let regex6 = new RegExp('andi')
+        let regex7 = new RegExp('Andi')
+        let regex8 = new RegExp('myr')
+        let regex9 = new RegExp('Myr')
+        let regex10 = new RegExp('Myran')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
