@@ -1,6 +1,6 @@
 /*Codded by @phaticusthiccy
-Telegram: https://t.me/phaticusthiccy
-Instagram: https://instagram.com/kyrie.baran
+recodded by afnanplk
+PINKY V2
 */
 
 const Asena = require('../events');
