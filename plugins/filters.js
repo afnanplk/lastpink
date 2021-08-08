@@ -1,4 +1,5 @@
 /* Copyright (C) 2020 farhan-dqz.
+re codded by afnanplk
 PINKY V2
 */
 const fs = require('fs')
