@@ -1,6 +1,7 @@
 /* Codded by @phaticusthiccy
 re-editted by afnanplk
 PINKY V2
+
 */
 
 const Asena = require('../events');
