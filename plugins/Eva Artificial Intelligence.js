@@ -1,5 +1,4 @@
 /* Codded by Phaticusthiccy
-
 Eva, The Phaticusthiccy's Multifunctional Artificial Intelligence
 
 Eva AI has more than 50 Gigabyte dataset which including neural calculator,
