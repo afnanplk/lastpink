@@ -1,5 +1,5 @@
 /* Copyright (C) 2020 Yusuf Usta.
-WhatsAsena - Yusuf Usta
+RECODDED BY AFNANPPLK
 Plk  
 */
 
