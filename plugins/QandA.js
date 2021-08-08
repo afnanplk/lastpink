@@ -3,7 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
 
-// .CMD_HELP
+// PINKY V2
 const brainly = "Finds the answer."
 const usage = ".brainly <Question>"
 
