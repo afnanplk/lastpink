@@ -1,7 +1,5 @@
-/* Copyright (C) 2020 Yusuf Usta.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* Copyright (C) 2020 afnanplk
+PINKY V2
 */
 
 const Asena = require('../events');
@@ -19,22 +17,14 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var THERI_off = ''
    
     if (config.LANG == 'EN') {
-        l_dsc = 'chilla theri vilichaal spot kick. -bot owner command'
-        alr_on = 'Antilink is already open!'
-        alr_off = 'Antilink is currently closed!'
+        l_dsc = 'Removes when callaing some bad words...'        
         THERI_on = '*eni chilla theri vilcha kick akkum*'
         THERI_off = '*eni enth theri vennelum vili*'
     }
    
-    if (config.LANG == 'HI') {
-        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
-        alr_on = 'एंटीलिंक पहले से ही खुला है!'
-        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
-        THERI_on = 'bgm option turndा!'
-        THERI_off = 'bgm option turned off'
-    }
+   
     if (config.LANG == 'ML') {
-        l_dsc = 'ആന്റിലിങ്ക് ഉപകരണം സജീവമാക്കുന്നു.'
+        l_dsc = 'chilla theri vilichaal spot kick. -bot owner command.'
         alr_on = 'ആന്റിലിങ്ക് ഇതിനകം തുറന്നു!'
         alr_off = 'ആന്റിലിങ്ക് നിലവിൽ അടച്ചിരിക്കുന്നു!'
         THERI_on = 'bgm option turned on'
