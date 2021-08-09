@@ -25,8 +25,6 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
    
     if (config.LANG == 'ML') {
         l_dsc = 'chilla theri vilichaal spot kick. -bot owner command.'
-        alr_on = 'ആന്റിലിങ്ക് ഇതിനകം തുറന്നു!'
-        alr_off = 'ആന്റിലിങ്ക് നിലവിൽ അടച്ചിരിക്കുന്നു!'
         THERI_on = 'bgm option turned on'
         THERI_off = 'bgm option turned off'
     }
