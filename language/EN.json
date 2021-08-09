@@ -396,7 +396,7 @@
             "FOTO_DESC": "Sends the replied photo as spam.",
             "FOTO_FOT": "```Please Reply To Any Picture!```",
             "VİD_DESC": "Sends the replied video as spam.",
-            "VİD_NEED": "```Please Reply to Any Video!```"
+            "VİD_NEED": "ᴘʟᴇᴀꜱᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴠɪᴅᴇᴏ!"
         },
         "carbon": {
             "CARBON_DESC": "Uses carbon.sh for Text-to-Image",
