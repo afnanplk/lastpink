@@ -4,7 +4,7 @@
 <div align="center">
   <img border-radius: 15px src="https://i.ibb.co/m8GcNv9/Pics-Art-08-10-05-44-33.jpg" width="170" height="170"/>
   <p align="center">
-<a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/ZaraMwol-violet?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-darkblue?&style=for-the-badge"></a>
 </p>
   <p align="center">
 <a href="https://github.com/afnanplk"><img title="Author" src="https://img.shields.io/badge/Author-afnanplk/pinkymwol?color=black&style=for-the-badge&logo=whatsapp"></a>
