@@ -1,5 +1,5 @@
 /* Copyright (C) 2020 farhan-dqz.
-re codded by afnan-plk and saidali
+re codded by afnan-plk and  saidali
 */
 const fs = require('fs')
 const Asena = require('../events');
