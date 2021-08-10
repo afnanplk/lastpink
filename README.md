@@ -7,7 +7,7 @@
 <a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-darkblue?&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/j0kerser"><img title="Author" src="https://img.shields.io/badge/Author-Jokerser-x-Raashii/ZaraMwol?color=black&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/j0kerser"><img title="Author" src="https://img.shields.io/badge/Author-Jokerser-x-Raashii/Zaramwol?color=black&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
