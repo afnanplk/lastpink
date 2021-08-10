@@ -6,9 +6,10 @@
   <p align="center">
 <a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-darkblue?&style=for-the-badge"></a>
 </p>
-  <p align="center">
-<a href="https://github.com/Jokerser-x-Raashii"><img title="Author" src="https://img.shields.io/badge/Author-Jokerser-x-Raashii/Zaramwol?color=black&style=for-the-badge&logo=github"></a>
-</p>
+  </p>
+<p align="center">
+<a href="https://github.com/Jokerser-x-Raashii"><img title="Raashii" src="https://img.shields.io/badge/Raashii-Raashii?color=black&style=for-the-badge&logo=github"></a>
+
 </div>
 <p align="center">
 Project created by <a href="https://github.com/afnanplk">afnanplk</a> to make it public
