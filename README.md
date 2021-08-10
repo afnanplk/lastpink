@@ -8,7 +8,7 @@
 </p>
   </p>
 <p align="center">
-<a href="https://github.com/Jokerser-x-Raashii"><img title="Raashii" src="https://img.shields.io/badge/Raashii-Raashii?color=black&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Jokerser-x-Raashii"><img title="Raashii" src="https://img.shields.io/badge/author-Raashii?color=black&style=for-the-badge&logo=github"></a>
 
 </div>
 <p align="center">
