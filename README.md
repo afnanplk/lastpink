@@ -86,7 +86,7 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ## Developers
   <div align="center">
     
-  [![saidali](https://avatars.githubusercontent.com/u/86299543?v=4)](https://github.com/farhan-dqz) |  [![Alien-Alfa](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
+  [![saidali](https://avatars.githubusercontent.com/u/86299543?v=4?size=100)](https://github.com/farhan-dqz) |  [![Alien-Alfa](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
 ----|----|----
 [farhan-dqz](https://github.com/farhan-dqz)  | [saidali](https://github.com/saidalisaid2) | [afnanplk](https://github.com/afnanplk)
 Base, Bug Fixes, Modules | Modifiying  as   public | Bug Fixes, Modules
