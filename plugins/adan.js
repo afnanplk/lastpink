@@ -12,7 +12,7 @@ const adzan = "Finds prayer time."
 const usage = ".prayer <city>"
 
 const butuh = "```give a city name!```"
-const renek = "```Not found the city!```"
+const renek = "```Not found the city! 🥴```"
 
 if (Config.WORKTYPE == 'private') {
 
