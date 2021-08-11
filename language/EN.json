@@ -29,13 +29,13 @@
         },
         "admin": {
             "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
-            "IM_NOT_ADMIN": "ꜱᴏʀʀʏ ᴀᴍ ɴᴏᴛ ᴀᴅᴍɪɴ",
+            "IM_NOT_ADMIN": "ɴᴊᴀɴ ᴀᴅɪɴ ᴀʟʟᴀ ʙᴏss ᴀᴅᴍɪɴ ᴀᴋᴋɪʏᴀ ᴏʀᴜ ᴋᴀʏ ɴᴏᴋᴋ",
             "BANNED": "ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ɢʀᴏᴜᴘ",
             "GIVE_ME_USER": "ɢɪᴠᴇ ᴍᴇ ᴀ ᴜꜱᴇʀ",
             "ADD_DESC": "Adds someone to the group.",
             "ADDED": "ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ",
             "ALREADY_PROMOTED": "ʜᴇ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴅᴍɪɴ ᴏᴏᴘᴢ",
-            "PROMOTED": ", ᴄᴏɴɢʀᴀᴛᴢ ʏᴏᴜ ᴀʀᴇ ᴘʀᴏᴍᴏᴛᴇᴅ",
+            "PROMOTED": ", ᴄᴏɴɢʀᴀᴛᴢ 🙉 ʏᴏᴜ ᴀʀᴇ ᴘʀᴏᴍᴏᴛᴇᴅ",
             "PROMOTE_DESC": "Makes any person an admin.",
             "DEMOTE_DESC": "Takes the authority of any admin.",
             "ALREADY_NOT_ADMIN": "```How can I make someone admin who is already admin?```",
@@ -148,7 +148,7 @@
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
-            "KICKME": "```Bye bye! I am going 🤠```",
+            "KICKME": "```sʜᴇʀɪ ʏᴇɴɴᴀ👋```",
             "PP_DESC": "Makes the profile photo what photo you reply.",
             "NEED_PHOTO": "*Give me a photo!*",
             "PPING": "```Setting profile photo...```",
@@ -166,8 +166,8 @@
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
             "NEED_PHOTO": "*Give me a photo!*",
-            "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
-            "RBGING": "```background maayich thera ijj wait aak...```"
+            "NO_API_KEY": "*Mothalali API key vechittilla!*\nYou can get it here: remove.bg.",
+            "RBGING": "```ʙɪssᴇʏ ɪᴘᴘᴏ sʜᴇʀɪ ᴀᴋᴋᴀ...```"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
@@ -227,15 +227,15 @@
             "REPLY": "*Please Respond to User's Message to Report!*"
         },
         "updater": {
-            "UPDATER_DESC": "Checks the update for pinky.",
-            "UPDATE": "*Your pinky is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for pinky!*\n\n ```use .list for commands``` \n\n *ask support group before updating or your bot might stop working* \n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
+            "UPDATER_DESC": "Checks the update for Zara.",
+            "UPDATE": "*Your Zara is completely up-to-date!*",
+            "NEW_UPDATE": "*New update available for Zara!*\n\n ```use .list for commands``` \n\n *ask support group before updating group link -https://chat.whatsapp.com/JXwRmc2lKT4IwauZnprpX5 or your bot might stop working* \n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "Pinky Updating...",
+            "UPDATING": "Updating...",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*✅ Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 Pinky Restarting Automatically!*",
+            "AFTER_UPDATE": "*💬 Zara Restarting Automatically!*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
@@ -514,7 +514,7 @@
             "CM_DESC": "Get a compliment.",
             "NOT_FOUNDAC": "*Invalid Request*",
             "CM": "Hey,",
-            "BOT_DESC": "Chat with Pinky.\n Use .molu <message>",
+            "BOT_DESC": "Chat with Zara.\n Use .zara <message>",
             "BOT": ":",
             "JOKE_DESC": "Get a random joke.",
             "DEVICE": "get the details of given mobile phone",     
@@ -580,7 +580,7 @@
             "M_AUT": "Music Author:"
         },
         "lyrics": {
-            "LY_DESC": "Pinky will find the lyrics of the song.",
+            "LY_DESC": "Zara will find the lyrics of the song.",
             "NEED": "\n```You Must Write Any Song!```\n",
             "SLY": "Lyrics:",
             "AUT": "Song Owner:",
