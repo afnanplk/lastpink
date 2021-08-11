@@ -75,9 +75,9 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart pinky",
-            "RESTART_MSG": "ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴘɪɴᴋʏ",
-            "SHUTDOWN_DESC": "Shutdown pinky",
+            "RESTART_DESC": "Restart Zara",
+            "RESTART_MSG": "*ʀᴇꜱᴛᴀʀᴛɪɴɢ ᴢᴀʀᴀᴍᴡᴏʟ👼*",
+            "SHUTDOWN_DESC": "Shutdown Zara",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
@@ -218,7 +218,7 @@
             "ADMİN": "*I am not admin in this group!*",
             "SCAN": "Checks whether the entered number is registered on WhatApp.",
             "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 90xxxx```",
-            "SUC": "*Numbered Person Uses WhatsApp! ✅*",
+            "SUC": "*Numbered Person Uses WhatsApp! 🪀*",
             "UNSUC": "*Numbered Person Does Not Use WhatsApp! ❌*",
             "TAGADMİN": "Tags group admins.",
             "REPORT": "Sends reports to group admins.",
@@ -229,7 +229,7 @@
         "updater": {
             "UPDATER_DESC": "Checks the update for Zara.",
             "UPDATE": "*Your Zara is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Zara!*\n\n ```use .list for commands``` \n\n *ask support group before updating group link -https://chat.whatsapp.com/JXwRmc2lKT4IwauZnprpX5 or your bot might stop working* \n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
+            "NEW_UPDATE": "*New update available for Zara!*\n\n ```use .list for commands``` \n\n *ask support group before updating group link -https://chat.whatsapp.com/JXwRmc2lKT4IwauZnprpX5* ```or``` *your bot might stop working* \n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "Updating...",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
