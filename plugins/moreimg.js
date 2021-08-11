@@ -412,4 +412,16 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: Config.AFN})
 
     }));
+
+    Asena.addCommand({ pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=queenamdipublic&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
+
+  }));
+
+}
 }
