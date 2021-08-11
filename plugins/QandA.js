@@ -7,7 +7,7 @@ const Config = require('../config');
 const brainly = "Finds the answer."
 const usage = ".brainly <Question>"
 
-const butuh = "```Enter the Question!```"
+const butuh = "Enter the Question!"
 
 if (Config.WORKTYPE == 'private') {
 
