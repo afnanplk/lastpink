@@ -19,7 +19,7 @@ Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.WP}, (async (messa
     
     
    
-  r_text[0] = "Config.RAASHII";
+  r_text[0] = (Config.RAASHII);
     
     
     var i = Math.floor(1*Math.random())
