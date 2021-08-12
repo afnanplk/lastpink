@@ -173,16 +173,6 @@
             "required": true,
             "value": "one"
         },
-        "GIF_WEL": {
-            "description": "Welcome message video link.",
-            "required": true,
-            "value": "https://i.imgur.com/iRCjokG.mp4"
-        },
-        "GIF_BYE": {
-            "description": "Goodbye message video link.",
-            "required": true,
-            "value": "https://i.imgur.com/NTar8dQ.mp4"
-        },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
             "required": false,
