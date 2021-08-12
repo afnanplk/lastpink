@@ -25,7 +25,6 @@ module.exports = {
     AFN: process.env.ALL_CAPTION === undefined ? 'Zara public bot' : process.env.ALL_CAPTION,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
     PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
-    RAASHII: process.env.OWNER_IMAGE === undefined ? 'https://i.ibb.co/m8GcNv9/Pics-Art-08-10-05-44-33.jpg' : process.env.OWNER_IMAGE,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
