@@ -1,31 +1,52 @@
-/* CODDED RAASHII
+/* Copyright (C) 2021 AFNAN PALLIKKEL
+CODDED AFNAN PALLIKKEL and saidali
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-ZARA
+PINKY
 */
 
-
 const Asena = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const axios = require('axios');
+const {MessageType} = require('@adiwajshing/baileys');
+const {spawnSync} = require('child_process');
 const Config = require('../config');
+const chalk = require('chalk');
 
 const Language = require('../language');
-const Lang = Language.getString('wallpaper');
+const Lang = Language.getString('system_stats');
 
-Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
-    var r_text = new Array ();
-    
-    
-   
-  r_text[0] = (Config.RAASHII);
-    
-    
-    var i = Math.floor(1*Math.random())
+if (Config.WORKTYPE == 'private') {
 
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.PLK}) 
+        if (message.jid === '15369524516-1612300121@g.us') {
 
-}));
+            return;
+        }
+
+        if (Config.PLK == 'default') {
+            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ & ᴊᴏᴋᴇʀsᴇʀ*' , MessageType.text);
+        }
+        else {
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n----------𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥----------', MessageType.text);
+        }
+    }));
+}
+
+else if (Config.WORKTYPE == 'public') {
+
+    Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+
+        if (message.jid === '54218542512-1612300121@g.us') {
+
+            return;
+        }
+
+        if (Config.PLK == 'default') {
+            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ & ᴊᴏᴋᴇʀsᴇʀ*' , MessageType.text);
+        }
+        else {
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n----------𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥----------', MessageType.text);
+        }
+    }));
+}
