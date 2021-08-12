@@ -50,12 +50,7 @@
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
             "value": "default"
-        },    
-        "OWNER_IMAGE": {
-            "description": "reply for .owner ! give your image link, Use => correct link.",
-            "required": false,
-            "value": "https://i.ibb.co/m8GcNv9/Pics-Art-08-10-05-44-33.jpg"
-        },    
+       },    
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
             "required": true,
