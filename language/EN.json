@@ -587,6 +587,16 @@
             "BUL": "Founded Song:",
             "ARAT": "Searched Song:"
         },
+        "info": {
+            "INFO_DESC": "Show chat details",
+            "GRP_NAME": "*🔠 Group name :*",
+            "GRP_JID": "*👥 Group JID :*",
+            "GRP_OWN": "*👤 Group owner :*",
+            "GRP_COD": "*🔗 Group invite link :*",
+            "GRP_DES": "*💬 Group description :*",
+            "PRO_JID": "*🌬️ User JID :*",
+            "PRO_DES": "*🗨️ Description :*"
+        },
         "covid": {
             "COV_DESC": "Shows the daily and overall covid table of more than 15 countries.",
             "NOT": "```Sorry I Could Not Find A Country Like This! Please Enter Applicable Country Codes!```\n\n```Country Codes:``` *.covid tr || az || usa || in || cn || nl || pk || ru || de || uk || gr || fr || jp || kz || id*"
