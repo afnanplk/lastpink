@@ -59,6 +59,15 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, dontAddCommandList: true, 
     }
 }));
 
+Asena.addCommand({pattern: 'name ?(.*)', onlyGroup: true, fromMe: true,desc: Asena}, (async (message, match) => {
+    var im = await checkImAdmin(message);
+    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,SEWA);
+    await message.client.groupUpdateSubject(message.jid, match[1]);
+    await message.client.sendMessage(message.jid,SEWB,MessageType.text);
+    }
+));
+
 Asena.addCommand({pattern: 'add(?: |$)(.*)', fromMe: true, dontAddCommandList: true, onlyGroup: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
