@@ -135,40 +135,40 @@ RAVANA.addCommand({pattern: '2moretxt$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd = '⚠️ Command : '
         desc_cmd = '🔘 Description : '
     }
-    const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil Sophia*\n\n' +
-        command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '*.bear Sophia*\n\n' +
-        command_cmd + '```.thunder``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '*.thunder Ra;One*\n\n' +
-        command_cmd + '```.123glitch```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '*.123glitch Sophia*\n\n' +
-        command_cmd + '```.berry``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '*.berry Sophia*\n\n' +
-        command_cmd + '```.peridot``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '*.light Sophia*\n\n' +
-        command_cmd + '```.joker``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '*.joker Sophia*\n\n' +
-        command_cmd + '```.honey``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '*.ninja Sophia*\n\n' +
-        command_cmd + '```.glitter``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '*.glitter Sophia*\n\n' +
-        command_cmd + '```.bokeh``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '*.bokeh Ra;One*\n\n' +
-        command_cmd + '```.greenhorror``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '*.greenhorror Sophia*\n\n' +
-        command_cmd + '```.2marvel``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '*.2marvel Sophia*\n\n' +
-        command_cmd + '```.d3neon``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '*.3dneon Ra;One*\n\n' +
-        command_cmd + '```.metalgalaxy``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '*.metalgalaxy Ra;One*\n\n' +
-        command_cmd + '```.metalsilver``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '*.metalsilver Ra;One*\n\n' +
-        command_cmd + '```.2graf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '*.2graf Sophia*\n\n' +
-        command_cmd + '```.rosegold``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '*.rosegold sl;Sophia*\n\n' +       
-        command_cmd + '```.transformer``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '*.transformer Sophia*\n\n' +
-        command_cmd + '```.ice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '*.ice Sophia*\n\n' +
-        command_cmd + '```.luxurymetel``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '*.luxurymetel Ra;One*\n\n' +
-        command_cmd + '```.mtg``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '*..mtg Sophia*\n\n' +
-        command_cmd + '```.camarica``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '*.camarica Sophia*\n\n' +
-        command_cmd + '```.magma``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '*.magma Sophia*\n\n' +
-        command_cmd + '```.layered``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '*.layered Sophia*\n\n' +
-        command_cmd + '```.embossed``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '*.embossed Sophia*\n\n' +
-        command_cmd + '```.papercut``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '*.papercut Sophia*\n\n' +
-        command_cmd + '```.wonderfullgraf``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.wonderfullgraf Ra;One*\n\n'+
-        command_cmd + '```.criholy``` \n' + desc_cmd + t30 + '_\n' + usage_cmd + '*.criholy Sophia*\n\n'+
-        command_cmd + '```.reacloud``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '*.reacloud Sophian\n'+
-        command_cmd + '```.catwindow``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '*.catwindow Sophia*\n\n'+
-        command_cmd + '```.sci``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '*.scc Sophia*\n\n'+
-        command_cmd + '```.halloween``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '*.scc Sophia*\n\n'+
-        command_cmd + '```.glue``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '*.scc Sophia*\n\n'+
-        command_cmd + '```.cup``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '*.cup Sophia*\n\n'
+    const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '.devil Zara\n\n' +
+        command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '.bear Zara\n\n' +
+        command_cmd + '```.thunder``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '.thunder Za;mol\n\n' +
+        command_cmd + '```.123glitch```\n' + desc_cmd + t3 + '_\n' + usage_cmd + '.123glitch Zara\n\n' +
+        command_cmd + '```.berry``` \n' + desc_cmd + t4 + '_\n' + usage_cmd + '.berry Zara\n\n' +
+        command_cmd + '```.peridot``` \n' + desc_cmd + t18 + '_\n' + usage_cmd + '.light Zara\n\n' +
+        command_cmd + '```.joker``` \n' + desc_cmd + t27 + '_\n' + usage_cmd + '.joker Zara\n\n' +
+        command_cmd + '```.honey``` \n' + desc_cmd + t5 + '_\n' + usage_cmd + '.ninja Zara\n\n' +
+        command_cmd + '```.glitter``` \n' + desc_cmd + t6 + '_\n' + usage_cmd + '.glitter Zara\n\n' +
+        command_cmd + '```.bokeh``` \n' + desc_cmd + t7 + '_\n' + usage_cmd + '.bokeh Ra;One\n\n' +
+        command_cmd + '```.greenhorror``` \n' + desc_cmd + t8 + '_\n' + usage_cmd + '.greenhorror Zara\n\n' +
+        command_cmd + '```.2marvel``` \n' + desc_cmd + t9 + '_\n' + usage_cmd + '.2marvel Zara\n\n' +
+        command_cmd + '```.d3neon``` \n' + desc_cmd + t11 + '_\n' + usage_cmd + '.3dneon Ra;One\n\n' +
+        command_cmd + '```.metalgalaxy``` \n' + desc_cmd + t12 + '_\n' + usage_cmd + '.metalgalaxy Ra;One\n\n' +
+        command_cmd + '```.metalsilver``` \n' + desc_cmd + t13 + '_\n' + usage_cmd + '.metalsilver Ra;One\n\n' +
+        command_cmd + '```.2graf``` \n' + desc_cmd + t15 + '_\n' + usage_cmd + '.2graf Zara\n\n' +
+        command_cmd + '```.rosegold``` \n' + desc_cmd + t16 + '_\n' + usage_cmd + '.rosegold sl;Zara\n\n' +       
+        command_cmd + '```.transformer``` \n' + desc_cmd + t17 + '_\n' + usage_cmd + '.transformer Zara\n\n' +
+        command_cmd + '```.ice``` \n' + desc_cmd + t19 + '_\n' + usage_cmd + '.ice Zara*\n\n' +
+        command_cmd + '```.luxurymetel``` \n' + desc_cmd + t20 + '_\n' + usage_cmd + '.luxurymetel Ra;One\n\n' +
+        command_cmd + '```.mtg``` \n' + desc_cmd + t21 + '_\n' + usage_cmd + '.mtg Zara\n\n' +
+        command_cmd + '```.camarica``` \n' + desc_cmd + t23 + '_\n' + usage_cmd + '.camarica Zaran\n' +
+        command_cmd + '```.magma``` \n' + desc_cmd + t25 + '_\n' + usage_cmd + '.magma Zara\n\n' +
+        command_cmd + '```.layered``` \n' + desc_cmd + t26 + '_\n' + usage_cmd + '.layered Zara\n\n' +
+        command_cmd + '```.embossed``` \n' + desc_cmd + t29 + '_\n' + usage_cmd + '.embossed Zara\n\n' +
+        command_cmd + '```.papercut``` \n' + desc_cmd + t28 + '_\n' + usage_cmd + '.papercut Zara\n\n' +
+        command_cmd + '```.wonderfullgraf``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '.wonderfullgraf Ra;One\n\n'+
+        command_cmd + '```.criholy``` \n' + desc_cmd + t30 + '_\n' + usage_cmd + '.criholy Zara\n\n'+
+        command_cmd + '```.reacloud``` \n' + desc_cmd + t31 + '_\n' + usage_cmd + '.reacloud Zara\n\n'+
+        command_cmd + '```.catwindow``` \n' + desc_cmd + t32 + '_\n' + usage_cmd + '.catwindow Zara\n\n'+
+        command_cmd + '```.sci``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.scc Zara\n\n'+
+        command_cmd + '```.halloween``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.scc Zara\n\n'+
+        command_cmd + '```.glue``` \n' + desc_cmd + t34 + '_\n' + usage_cmd + '.scc Zara\n\n'+
+        command_cmd + '```.cup``` \n' + desc_cmd + t33 + '_\n' + usage_cmd + '.cup Zara\n\n'
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
 RAVANA.addCommand({pattern: 'devil ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
