@@ -18,7 +18,7 @@ if (Config.LANG == 'SI') desc_msg = 'Unlimited logo pack එක.'
 if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
-RAVANA.addCommand({pattern: 'moretxt2$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
+RAVANA.addCommand({pattern: '2moretxt$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
     var t3 = ''
