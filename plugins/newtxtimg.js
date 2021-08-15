@@ -18,7 +18,7 @@ if (Config.LANG == 'SI') desc_msg = 'Unlimited logo pack එක.'
 if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
-RAVANA.addCommand({pattern: 'txttoimg$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
+RAVANA.addCommand({pattern: 'moretxt2$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
     var t3 = ''
@@ -131,9 +131,9 @@ RAVANA.addCommand({pattern: 'txttoimg$', fromMe: wk, desc: desc_msg}, (async (me
         command_cmd = '🎲 විදානය : '
         desc_cmd = '🎯 Description : '
     } else { 
-        usage_cmd = '🎁 Example : *'
-        command_cmd = '🎲 Command : '
-        desc_cmd = '🎯 Description : '
+        usage_cmd = '🗯️ Example : *'
+        command_cmd = '⚠️ Command : '
+        desc_cmd = '🔘 Description : '
     }
     const msg = command_cmd + '```.devil``` \n' + t1 + '_\n' + usage_cmd + '*.devil Sophia*\n\n' +
         command_cmd + '```.bear``` \n' + desc_cmd + t2 + '_\n' + usage_cmd + '*.bear Sophia*\n\n' +
