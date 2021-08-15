@@ -5,6 +5,7 @@ PINKY V2
 const fs = require('fs')
 const Asena = require('../events');
 const {MessageType, Mimetype } = require('@adiwajshing/baileys');
+const afn = Config.PLKS !== false ? Config.PLKS.split(',') : [];
 const FilterDb = require('./sql/filters');
 const Config = require('../config')
 const jid = Config.DISBGM !== undefined ? Config.DISBGM.split(',') : [];
