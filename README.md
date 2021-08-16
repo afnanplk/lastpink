@@ -4,11 +4,11 @@
 <div align="center">
   <img border-radius: 15px src="https://i.ibb.co/9rrnJ7g/20210815-080839.jpg" width="170" height="170"/>
   <p align="center">
-<a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-darkblue?&style=for-the-badge"></a>
+<a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-pink?&style=for-the-badge"></a>
 </p>
   </p>
 <p align="center">
-<a href="https://github.com/Jokerser-x-Raashii"><img title="Raashii" src="https://img.shields.io/badge/author-Raashii?color=black&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Jokerser-x-Raashii"><img title="Raashii" src="https://img.shields.io/badge/author-Raashii?color=blue&style=for-the-badge&logo=github"></a>
 
 </div>
 <p align="center">
@@ -23,13 +23,13 @@ Project created by <a href="https://github.com/Raashii">Raashii</a> & <a href="h
 
   <p align="center">
   <a href="https://github.com/Jokerser-x-Raashii/Zaramwol ">
-    <img src="https://img.shields.io/github/repo-size/Jokerser-x-Raashii/Zaramwol?color=grey&label=Repo%20total%20size&style=flat-square">
+    <img src="https://img.shields.io/github/repo-size/Jokerser-x-Raashii/Zaramwol?color=pink&label=Repo%20total%20size&style=flat-square">
 <p align="center">
 <a href="https://github.com/Jokerser-x-Raashii/followers"><img title="Followers" src="https://img.shields.io/github/followers/Jokerser-x-Raashii?color=grey&style=plastic"></a>
 <a href="https://github.com/Jokerser-x-Raashii/Zaramwol/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Jokerser-x-Raashii/Zaramwol?color=grey&style=plastic"></a>
 <a href="https://github.com/Jokerser-x-Raashii/Zaramwol/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Jokerser-x-Raashii/Zaramwol?color=grey&style=plastic"></a>
 <a href="https://github.com/Jokerser-x-Raashii/Zaramwol/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Jokerser-x-Raashii/Zaramwol?label=Watchers&color=grey&style=flat-circle"></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-grey.svg"</a>
+<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-pink.svg"</a>
 
 ```
   
