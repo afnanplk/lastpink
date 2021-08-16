@@ -6,7 +6,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
     
-Asena.addCommand({pattern: 'aliv', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'alive', fromMe: true,dontAddCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();    
 r_text[0] = "The greatest glory in living lies not in never falling, but in rising every time we fall.\n           -Nelson Mandela";
@@ -49,7 +49,7 @@ await message.sendMessage(r_text[i]);
 
 else if (Config.WORKTYPE == 'public') {
     
-Asena.addCommand({pattern: 'aliv', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'alive', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();    
 r_text[0] = "The greatest glory in living lies not in never falling, but in rising every time we fall.\n           -Nelson Mandela";
