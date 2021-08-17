@@ -575,7 +575,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ Sophia '});
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ZᴀʀͥᴀͭᴍᷤWᷟᴏͤʟ '});
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -583,7 +583,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(config.GIF_WEL, { responseType: 'arraybuffer' })
-            await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ Sophia'});
+            await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ZᴀʀͥᴀͭᴍᷤWᷟᴏͤʟ'});
             }
             return;
         }
