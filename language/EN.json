@@ -182,6 +182,7 @@
             "UNKNOWN_ERROR": "```An error occurred. Foreign currency transaction failed!```",
             "TTS_DESC": "It converts text to sound.",
             "TTS_ERROR": "```Error, Speech example of your sentence couldn't be made!```",
+            "ISONG_DESC": "Uploads the song you wrote for ios users.",
             "SONG_DESC": "Uploads the song you wrote.",
             "SING_DESC": "Sings the song you wrote.",
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song open your wings```",
