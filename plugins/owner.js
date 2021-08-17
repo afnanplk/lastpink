@@ -25,10 +25,10 @@ if (Config.WORKTYPE == 'private') {
         }
 
         if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ & ᴊᴏᴋᴇʀsᴇʀ*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n----------𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥----------', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------- 𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥 --------', MessageType.text);
         }
     }));
 }
@@ -43,10 +43,10 @@ else if (Config.WORKTYPE == 'public') {
         }
 
         if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ & ᴊᴏᴋᴇʀsᴇʀ*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n----------𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥----------', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------- 𝐙𝐚𝐫𝐚🧚‍♀️𝐌𝐰𝐨𝐥 ---------', MessageType.text);
         }
     }));
 }
