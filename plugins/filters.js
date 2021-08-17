@@ -7,6 +7,7 @@ const Asena = require('../events');
 const {MessageType, Mimetype } = require('@adiwajshing/baileys');
 const FilterDb = require('./sql/filters');
 const Config = require('../config')
+const afn = Config.PLKS !== false ? Config.PLKS.split(',') : [];
 const jid = Config.DISBGM !== undefined ? Config.DISBGM.split(',') : [];
 const Language = require('../language');
 const Lang = Language.getString('filters');
@@ -203,4 +204,51 @@ filtreler.map(
     }
 );
 }));
+     async function checkUsAdmin(message, user = message.data.participant) {
+    var grup = await message.client.groupMetadata(message.jid);
+    var sonuc = grup['participants'].map((member) => {     
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    return sonuc.includes(true);
+}
+async function checkImAdmin(message, user = message.client.user.jid) {
+    var grup = await message.client.groupMetadata(message.jid);
+    var sonuc = grup['participants'].map((member) => {     
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    return sonuc.includes(true);
+}
+ 
+     Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
+
+        if(Config.THERI_KICK){
+        let banned = jid.find( Jid => Jid === message.jid);
+        if(banned !== undefined) return
+        
+const array = afn 
+array.map( async (a) => {
+let pattern = new RegExp(`\\b${a}\\b`, 'g');
+if(pattern.test(message.message)){
+            var us = await checkUsAdmin(message)
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            if (us) return;
+    await message.client.sendMessage(message.jid,'you used a bad word that we dont allow here \n -admin panal ', MessageType.text, {quoted: message.data });  
+    await message.client.groupRemove(message.jid, [message.data.participant]);                
+}
+});
+    }
+
+    var filtreler = await FilterDb.getFilter(message.jid);
+    if (!filtreler) return; 
+    filtreler.map(
+        async (filter) => {
+            pattern = new RegExp(filter.dataValues.regex ? filter.dataValues.pattern : ('\\b(' + filter.dataValues.pattern + ')\\b'), 'gm');
+            if (pattern.test(message.message)) {
+                await message.client.sendMessage(message.jid,filter.dataValues.text, MessageType.text, {quoted: message.data});
+            }
+        }
+    );
+}));
+
 }
