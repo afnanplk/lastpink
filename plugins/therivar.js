@@ -17,16 +17,16 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var THERI_off = ''
    
     if (config.LANG == 'EN') {
-        l_dsc = 'Removes when callaing some bad words...'        
-        THERI_on = '*eni chilla theri vilcha kick akkum*'
-        THERI_off = '*eni enth theri vennelum vili*'
+        l_dsc = 'members will be removed when specified bad words are used...'        
+        THERI_on = 'ᴍᴇᴍʙᴇʀꜱ ᴡɪʟʟ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ɪꜰ ʙᴀᴅ ᴡᴏʀᴅꜱ ᴀʀᴇ ᴜꜱᴇᴅ'
+        THERI_off = 'ᴍᴇᴍʙᴇʀꜱ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ɪꜰ ʙᴀᴅ ᴡᴏʀᴅꜱ ᴀʀᴇ ᴜꜱᴇᴅ'
     }
    
    
     if (config.LANG == 'ML') {
-        l_dsc = 'chilla theri vilichaal spot kick. -bot owner command.'
-        THERI_on = 'bgm option turned on'
-        THERI_off = 'bgm option turned off'
+        l_dsc = 'നിർദ്ദിഷ്ട മോശം വാക്കുകൾ വിളിക്കുമ്പോൾ അംഗത്തെ നീക്കംചെയ്യുന്നു '
+        THERI_on = 'മോശം വാക്കുകൾ ഉപയോഗിച്ചാൽ അംഗങ്ങളെ നീക്കം ചെയ്യും'
+        THERI_off = 'മോശം വാക്കുകൾ ഉപയോഗിച്ചാൽ അംഗങ്ങളെ നീക്കം ചെയ്യില്ല'
     }
    
     Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
