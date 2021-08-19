@@ -1,4 +1,7 @@
 /* Codded by Phaticusthiccy
+re edit saidalisaid
+
+
 Eva, The Phaticusthiccy's Multifunctional Artificial Intelligence
 
 Eva AI has more than 50 Gigabyte dataset which including neural calculator,
@@ -65,7 +68,7 @@ let wk = conf.WORKTYPE == 'public' ? false : true
 var vtalk_dsc = ''
 var reply_eva = ''
 if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
-if (conf.LANG == 'EN') vtalk_dsc = 'Starts to pinky voice chat.', reply_eva = '*Reply to Any Voice Message!*'
+if (conf.LANG == 'EN') vtalk_dsc = 'Starts to Zara voice chat.', reply_eva = '*Reply to Any Voice Message!*'
 if (conf.LANG == 'AZ') vtalk_dsc = 'Eva səsli söhbətinə başlayır.', reply_eva = '*Hər hansı bir səsli mesaja cavab verin!*'
 if (conf.LANG == 'PT') vtalk_dsc = 'Começa o bate-papo por voz de Eva.', reply_eva = '*Responder a qualquer mensagem de voz!*'
 if (conf.LANG == 'RU') vtalk_dsc = 'Запускает голосовой чат Eva.', reply_eva = '*Ответьте на любое голосовое сообщение!*'
@@ -277,11 +280,11 @@ if (conf.LANG == 'TR') {
     succ_off = 'Eva, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
 }
 if (conf.LANG == 'EN') {
-    fulleva_dsc = 'Activates full functional Zara features. Turn your account into a ai chatbot! 🧜‍♀️'
-    already_on = 'Zara artificial intelligence is already fully functional. 🌝'
-    already_off = 'Zara artificial intelligence is currently running semi-functional. 🌛'
-    succ_on = 'Zara Opened Fully Functionally! Please wait a bit! ✅'
-    succ_off = 'Zara Set to Semi-Functional! Please wait a bit! ☑️'
+    fulleva_dsc = 'Activates full functional Zara features. Turn your account into a ai chatbot!'
+    already_on = 'Zara artificial intelligence is already fully functional.'
+    already_off = 'Zara artificial intelligence is currently running semi-functional.'
+    succ_on = 'ZaraMwol Opened Fully 🌑 Functionally! Please wait a bit! ✅'
+    succ_off = 'ZaraMwol Set to Semi 🌗 Functional! Please wait a bit! ☑️'
 }
 if (conf.LANG == 'AZ') {
     fulleva_dsc = 'Tam funksional Eva xüsusiyyətlərini aktivləşdirir. Hesabınızı bir chatbot halına gətirin!'
@@ -312,7 +315,7 @@ if (conf.LANG == 'HI') {
     succ_off = 'अर्ध-कार्यात्मक करने के लिए ईवा सेट! कृपया थोड़ी प्रतीक्षा करें! ☑️'
 }
 if (conf.LANG == 'ML') {
-    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Zara സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
+    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Eva സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
     already_on = 'ഇവ കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
     already_off = 'ഇവാ AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
     succ_on = 'ഇവ പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
