@@ -587,6 +587,9 @@
             "BUL": "Founded Song:",
             "ARAT": "Searched Song:"
         },
+        "gitlink": {
+            "GL": "To get github links."
+        },
         "info": {
             "INFO_DESC": "Show chat details",
             "GRP_NAME": "*🔠 Group name :*",
