@@ -1,52 +1,41 @@
-/* Copyright (C) 2021 AFNAN PALLIKKEL
-CODDED AFNAN PALLIKKEL and saidali
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-PINKY
-*/
-
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
-const {spawnSync} = require('child_process');
-const Config = require('../config');
-const chalk = require('chalk');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
 const Language = require('../language');
-const Lang = Language.getString('system_stats');
+const Lang = Language.getString('gitlink');
 
+Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message, match) => {
 
-if (Config.WORKTYPE == 'private') {
+    var r_text = new Array ();
+    
+    
+   
+  r_text[0] = "https://i.ibb.co/9rrnJ7g/20210815-080839.jpg";
+    
+    
+    var i = Math.floor(1*Math.random())
 
-    Asena.addCommand({pattern: 'git', fromMe: true, desc: 'shows git link of bot'}, (async (message, match) => {
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `Links ☟︎︎︎
+ 
 
-            return;
-        }
+ *Github link       _https://github.com/Jokerser-x-Raashii/Zaramwol_*
+ 
+ 
+ 
 
-        if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ*' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n*🖤GIT LINK* - ```https://github.com/Jokerser-x-Raashii/Zaramwol```', MessageType.text);
-        }
-    }));
-}
+ *Audio commads-1    _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/uploads_*
+ 
+ 
+ 
+  *Audio commads-2    _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/upload_*
+  
+  
+ 
 
-else if (Config.WORKTYPE == 'public') {
+ *Sticker commads  _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/stickers_*
+`}) 
 
-    Asena.addCommand({pattern: 'git', fromMe: false, desc: 'shows the git link of bot'}, (async (message, match) => {
-
-        if (message.jid === '54218542512-1612300121@g.us') {
-
-            return;
-        }
-
-        if (Config.PLK == 'default') {
-            await message.client.sendMessage(message.jid,'𝐙𝐚𝐫𝐚𝐌𝐰𝐨𝐥 Bot created by *ʀᴀᴀsʜɪɪ* \n\n *GIT LINK* - ```https://github.com/Jokerser-x-Raashii/Zaramwol```' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n*🌚GIT LINK* - ```https://github.com/Jokerser-x-Raashii/Zaramwol```', MessageType.text);
-        }
-    }));
-}
+})); 
