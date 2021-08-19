@@ -1,5 +1,5 @@
 /*Codded by @phaticusthiccy
-recodded by afnanplk
+recodded by afnan plk
 PINKY V2 
 */
 
