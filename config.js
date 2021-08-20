@@ -37,7 +37,7 @@ module.exports = {
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ...' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ...' : process.env.SONGU,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
-    GIFORPP: process.env.GREETING_TYPE === undefined ? 'pp' : process.env.GREETING_TYPE,
+    GIFORPP: process.env.GREETING_TYPE === undefined ? 'GIF' : process.env.GREETING_TYPE,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     STICKERP: process.env.STICKER_REPLY === undefined ? false : convertToBool(process.env.STICKER_REPLY),
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
