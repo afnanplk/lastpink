@@ -18,7 +18,7 @@ if (Config.WORKTYPE == 'private') {
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Raashii ser'})
 
-  }));
+  });
 }
 
 else if (Config.WORKTYPE == 'public') {
@@ -29,5 +29,5 @@ else if (Config.WORKTYPE == 'public') {
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
 
-  }));
+  });
 }
