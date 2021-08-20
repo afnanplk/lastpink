@@ -18,24 +18,19 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `Links ☟︎︎︎
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
  
 
- *Github link       _https://github.com/Jokerser-x-Raashii/Zaramwol_*
- 
- 
+        *Github link        _https://tinyurl.com/yggyjfgf_*
  
 
- *Audio commads-1    _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/uploads_*
+       *Audio commads-1     _https://tinyurl.com/yfdkmuhd_*
  
  
- 
-  *Audio commads-2    _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/upload_*
+       *Audio commads-2     _https://tinyurl.com/yejp9qkh_*
   
   
- 
-
- *Sticker commads  _https://github.com/Jokerser-x-Raashii/Zaramwol/tree/master/stickers_*
+      *Sticker commads      _https://tinyurl.com/yejlp33d_*
 `}) 
 
 })); 
