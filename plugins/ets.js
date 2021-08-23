@@ -12,27 +12,41 @@ const Lang = Language.getString('rashi');
 
 if (Config.WORKTYPE == 'private') {
 
-  Raashii.addCommand({ pattern: 'esticker ?(.*)', fromMe: false, desc: 'emoji to sticker'}, (async (message, match) => {
+  Raashii.addCommand({pattern: 'esticker ?(.*)', fromMe: true, desc: 'emoji to sticker'}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(need);
+      if (match[1] === '') return await message.sendMessage(need);
+        
+      if (message.jid === '905524317852-1612300121@g.us') {
 
-    var rashi = await axios.get(`https://api.zeks.me/api/emoji-image?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&emoji=${match[1]}`, { responseType: 'arraybuffer' })
-    
-    await message.client.sendMessage(message.jid,Buffer.from(rashi.data), MessageType.sticker, {mimetype: Mimetype.webp })
-
-  }));
+            return;
+        }
+        
+      var uri = encodeURI(match[1]);
+  
+      var raashii = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&emoji='+ uri, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(raashii.data), MessageType.sticker, { mimetype: Mimetype.webp})
+  
+    }));
 }
 
 else if (Config.WORKTYPE == 'public') {
 
-  Raashii.addCommand({ pattern: 'esticker ?(.*)', fromMe: false, desc: 'emoji to sticker'}, (async (message, match) => {
+  Raashii.addCommand({pattern: 'esticker ?(.*)', fromMe: true, desc: 'emoji to sticker'}, (async (message, match) => {
 
-    if (match[1] === '') return await message.sendMessage(need);
+      if (match[1] === '') return await message.sendMessage(need);
+        
+      if (message.jid === '905524317852-1612300121@g.us') {
 
-    var rashi = await axios.get(`https://api.zeks.me/api/emoji-image?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&emoji=${match[1]}`, { responseType: 'arraybuffer' })
-
-    await message.client.sendMessage(message.jid,Buffer.from(rashi.data), MessageType.sticker, {mimetype: Mimetype.webp })
-
-  }));
+            return;
+        }
+        
+      var uri = encodeURI(match[1]);
+  
+      var raashii = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&emoji='+ uri, { responseType: 'arraybuffer' })
+  
+      await message.client.sendMessage(message.jid,Buffer.from(raashii.data), MessageType.sticker, { mimetype: Mimetype.webp})
+  
+    }));
 
 }
