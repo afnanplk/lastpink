@@ -216,7 +216,7 @@ else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'moretxt', fromMe: false, desc: 'more txtit commands'}, (async (message, match) => {
   
-  await message.sendMessage('\n\n\n📱command : .anony\n💎desc : change your text to image.\n\n📱command : .gaming\n💎desc : change your text to gaming logo.\n\n📱command : .flower\n💎desc : change your text to flower image.\n\n📱command : .leavest\n💎desc : change your text to leavest image.\n\n📱command : .break\n💎desc : change your text to wall breaking image.\n\n📱command : .phub\n💎desc : change your text into pornhub logo.\n🏷️example : .phuh BOT;X.\n\n📱command : .blood\n💎desc : change your text frozen blood on a glass\n\n📱command : .1917\n💎desc : change your text to a 1917 model image\n\n📱command : .maskman\n💎desc : change your text to mask man bg\n🏷️example : .avengers its;BOT X.\n\n📱command : .boxed\n💎desc : change your text to 3d boxed design\n\n📱command : .window\n💎desc : write your text on a foggy window \n\n📱command : .skywal\n💎desc : random sky wallpaper with given text\n\n📱command : .holo\n💎desc : change your text to holo design\n\n📱command : .drop\n💎desc : change your text into rain water drop.n\n📱command : .flame\n💎desc : text with fire effect.\n\n📱command : .vtext\n💎desc : text to video.\n\n📱command : .ptext\n💎desc : text to video.\n\n📱command : .colortext\n💎desc : text to colorfull video\n\n📱command : .cloud\n💎desc : text on cloud\n\n📱command : .2ninja\n💎desc : random ninja logo with given name.');
+  await message.sendMessage('\n\n\n📱command : .anony\n💎desc : change your text to image.\n\n📱command : .gaming\n💎desc : change your text to gaming logo.\n\n📱command : .flower\n💎desc : change your text to flower image.\n\n📱command : .leavest\n💎desc : change your text to leavest image.\n\n📱command : .zneon\n💎desc : change your text into zneon image.\n🏷️example : .zneon BOT;X;Y.\n\n📱command : .break\n💎desc : change your text to wall breaking image.\n\n📱command : .phub\n💎desc : change your text into pornhub logo.\n🏷️example : .phuh BOT;X.\n\n📱command : .blood\n💎desc : change your text frozen blood on a glass\n\n📱command : .1917\n💎desc : change your text to a 1917 model image\n\n📱command : .maskman\n💎desc : change your text to mask man bg\n🏷️example : .avengers its;BOT X.\n\n📱command : .boxed\n💎desc : change your text to 3d boxed design\n\n📱command : .window\n💎desc : write your text on a foggy window \n\n📱command : .skywal\n💎desc : random sky wallpaper with given text\n\n📱command : .holo\n💎desc : change your text to holo design\n\n📱command : .drop\n💎desc : change your text into rain water drop.n\n📱command : .flame\n💎desc : text with fire effect.\n\n📱command : .vtext\n💎desc : text to video.\n\n📱command : .ptext\n💎desc : text to video.\n\n📱command : .colortext\n💎desc : text to colorfull video\n\n📱command : .cloud\n💎desc : text on cloud\n\n📱command : .2ninja\n💎desc : random ninja logo with given name.');
   
 }));
 
@@ -453,5 +453,22 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
 
     }));
+  Asena.addCommand({pattern: 'zneon ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+  var topText, bottomText, lastText;
+    if (match[2].includes(';')) {
+        var split = match[1].split(';');
+        lastText = split[2];
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon?text1=${bottomText}&text2=${topText}&text3=${lastText}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.AFN})
+
+    }));
+  
 }
