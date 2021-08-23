@@ -458,7 +458,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
   
   var topText, bottomText, lastText;
-    if (match[2].includes(';')) {
+    if (match[1].includes(';')) {
         var split = match[1].split(';');
         lastText = split[2];
         bottomText = split[1];
