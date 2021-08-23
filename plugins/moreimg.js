@@ -7,6 +7,7 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
+const need = "*Enter text after Command💌*"
 
 if (Config.WORKTYPE == 'private') {
 
@@ -421,6 +422,26 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
 
-  }));
+    }));
+
+    Asena.addCommand({ pattern: 'flower ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/flowertext?apikey=g7fGXMAYaP9WMBAXSEgVAbnBu7f&text=(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
+
+    }));
+
+    Asena.addCommand({ pattern: 'leavest ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/leavest?apikey=g7fGXMAYaP9WMBAXSEgVAbnBu7f&text=(match[1])}`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.AFN})
+
+    }));
 
 }
