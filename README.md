@@ -52,7 +52,7 @@ the user is responsible.
 ## Setup
 <div align="center">
 
-  ### Simple Method
+  ### <u> Simple Method <u>
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Raashii/ZaraMwol)
 
