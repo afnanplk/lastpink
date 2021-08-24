@@ -216,7 +216,7 @@ else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'moretxt', fromMe: false, desc: 'more txtit commands'}, (async (message, match) => {
   
-  await message.sendMessage('\n\n\n📱command : .anony\n💎desc : change your text to image.\n\n📱command : .gaming\n💎desc : change your text to gaming logo.\n\n📱command : .flower\n💎desc : change your text to flower image.\n\n📱command : .leavest\n💎desc : change your text to leavest image.\n\n📱command : .zneon\n💎desc : change your text into zneon image.\n🏷️example : .zneon BOT;X;Y.\n\n📱command : .break\n💎desc : change your text to wall breaking image.\n\n📱command : .phub\n💎desc : change your text into pornhub logo.\n🏷️example : .phuh BOT;X.\n\n📱command : .blood\n💎desc : change your text frozen blood on a glass\n\n📱command : .1917\n💎desc : change your text to a 1917 model image\n\n📱command : .maskman\n💎desc : change your text to mask man bg\n🏷️example : .avengers its;BOT X.\n\n📱command : .boxed\n💎desc : change your text to 3d boxed design\n\n📱command : .window\n💎desc : write your text on a foggy window \n\n📱command : .skywal\n💎desc : random sky wallpaper with given text\n\n📱command : .holo\n💎desc : change your text to holo design\n\n📱command : .drop\n💎desc : change your text into rain water drop.n\n📱command : .flame\n💎desc : text with fire effect.\n\n📱command : .vtext\n💎desc : text to video.\n\n📱command : .ptext\n💎desc : text to video.\n\n📱command : .colortext\n💎desc : text to colorfull video\n\n📱command : .cloud\n💎desc : text on cloud\n\n📱command : .2ninja\n💎desc : random ninja logo with given name.');
+  await message.sendMessage('\n\n\n📱command : .gaming\n💎desc : change your text to gaming logo.\n\n📱command : .flower\n💎desc : change your text to flower image.\n\n📱command : .leavest\n💎desc : change your text to leavest image.\n\n📱command : .zneon\n💎desc : change your text into zneon image.\n🏷️example : .zneon BOT;X;Y.\n\n📱command : .break\n💎desc : change your text to wall breaking image.\n\n📱command : .cphub\n💎desc : change your text into pornhub comment.\n🏷️example : .cphub zara;hi.\n\n📱command : .pubg\n💎desc : change your text into pubg image.\n🏷️example : .phuh zara;ground.\n\n📱command : .phub\n💎desc : change your text into pornhub logo.\n🏷️example : .phuh BOT;X.\n\n📱command : .blood\n💎desc : change your text frozen blood on a glass\n\n📱command : .1917\n💎desc : change your text to a 1917 model image\n\n📱command : .maskman\n💎desc : change your text to mask man bg\n\n📱command : .boxed\n💎desc : change your text to 3d boxed design\n\n📱command : .window\n💎desc : write your text on a foggy window \n\n📱command : .skywal\n💎desc : random sky wallpaper with given text\n\n📱command : .holo\n💎desc : change your text to holo design\n\n📱command : .drop\n💎desc : change your text into rain water drop.n\n📱command : .flame\n💎desc : text with fire effect.\n\n📱command : .vtext\n💎desc : text to video.\n\n📱command : .ptext\n💎desc : text to video.\n\n📱command : .colortext\n💎desc : text to colorfull video\n\n📱command : .cloud\n💎desc : text on cloud\n\n📱command : .2ninja\n💎desc : random ninja logo with given name.');
   
 }));
 
@@ -471,4 +471,38 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
   
+
+  Asena.addCommand({pattern: 'pubg ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+  var topText, bottomText;
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var webimage = await axios.get(`https://api.zeks.me/api/pubglogo?apikey=cjxJIn9eDletRHac3CG6CdvGxFH&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.AFN})
+
+    }));
+  Asena.addCommand({pattern: 'cphub ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+  
+  var topText, bottomText;
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
+        bottomText = split[1];
+        topText = split[0];
+}
+
+    var webimage = await axios.get(`https://api.zeks.me/api/phub?apikey=4PXD3f97yHgcO8aOD5GGIsEJB6l&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara+buat+foto+profil+di+whatsapp+menjadi+unik.jpg&username={topText}&msg=${bottomText}`, { responseType: 'arraybuffer' })
+
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: Config.AFN})
+
+    }));
+
 }
