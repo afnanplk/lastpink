@@ -252,7 +252,7 @@ else if (Config.WORKTYPE == 'public') {
 
 Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING2, MessageType.text);
 
     // ================================================== CONFIG SCANNER ==================================================
     if (match[1] == 'SEND_READ: true' || match[1] == 'SEND_READ: True' || match[1] == 'SEND_READ: TRUE' || match[1] == 'SEND_READ:True' || match[1] == 'SEND_READ:TRUE' || match[1] == 'SEND_READ:ture' || match[1] == 'SEND_READ: ture' || match[1] == 'SEND_READ:ttue' || match[1] == 'SEND_READ:trie' || match[1] == 'SEND_READ: trie' || match[1] == 'SEND_READ:Trie' || match[1] == 'SEND_READ: Trie') {
