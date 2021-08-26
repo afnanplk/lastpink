@@ -6,7 +6,7 @@ wikipedia data, sentiment analysis, Instagram workflow with neural cells.
 
 Thanks for Brainshop.ai for a rest connection with non-ethernet interaction
 Eva database. 
-
+ 
 Eva is a multimedia-powered artificial intelligence with its own virtual brain.
 Brainshop.ai allow access to load all external conversation for train Neural cells,
 from every user's historical conversations.
