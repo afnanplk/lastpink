@@ -80,3 +80,90 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         }
     }
 }));
+
+var alllink_var = ''
+async function afn() {
+    await heroku.get(baseURI + '/config-vars').then(async (vars) => {
+        AI_var = vars.Z_PINKY_AI
+    });
+}
+afn()
+var plk1 = ''
+var plk2 = ''
+var plk3 = ''
+var plk4 = ''
+var plk5 = ''
+var plk6 = ''
+var plk7 = ''
+var plk8 = ''
+var plk9 = ''
+
+ if (Config.LANG == 'ML') {
+         plk1 = '```എല്ലാ കമാൻഡുകളും ലഭിക്കാൻ .list ടൈപ്പ് ചെയ്യുക```'
+         plk2 = 'എന്റെ പേര് '
+         plk3 = 'അതെ എന്നോട് പറയൂ, ഞാൻ നിങ്ങളെ എങ്ങനെ സഹായിക്കും'
+         plk4 = '👻Boo-o-o-oh👻'
+         plk5 = 'എനിക്കറിയാം അവൻ എന്റെ സ്രഷ്ടാവാണെന്ന്'
+         plk6 = 'ᴍᴏꜱꜱ , ꜱᴀʜᴀʟ , ᴄʜᴇʀʀʏ , ꜰᴀʀʜᴀɴ'
+         plk7 = 'ഞാൻ .... ആഹ് ഞാൻ ആരാണെന്ന് എനിക്കറിയില്ല \n ഞാൻ ആരാണെന്ന് നിങ്ങൾക്കറിയാമെങ്കിൽ ദയവായി എന്നോട് പറയു🥺🥺'
+         plk8 = 'ആരെങ്കിലും എന്നെ സഹായിക്കൂ, ഈ വ്യക്തി മോശമായി സംസാരിക്കുന്നു \n ഞാൻ ഒരു നല്ല പെൺകുട്ടിയാണ് ... \n\n ട്രിൻ..ട്രിൻ ... *ഹലോ പോലീസ് സ്റ്റേഷൻ *'
+         plk9 = ' https://github.com/afnanplk/lastpink '
+      }//afnanplk creation
+    else {
+        plk1 = 'to get all commands type .list*'
+        plk2 = 'hey am '
+        plk3 = 'ʏᴇꜱ ᴛᴇʟʟ ᴍᴇ, ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ'
+        plk4 = '👻Boo-o-o-oh👻'
+        plk5 = 'i know him he is my creator'
+        plk6 = 'ᴍᴏꜱꜱ , ꜱᴀʜᴀʟ , ᴄʜᴇʀʀʏ , ꜰᴀʀʜᴀɴ'
+        plk7 = 'i am .... aah i dont know who i am \n please tell me if you know who i am 🥺🥺'
+        plk8 = 'somebody help me this person is talking bad things \n i am a good girl...\n\n trin..trin... *hello police station*'
+        plk9 = ' https://github.com/afnanplk/lastpink '
+    }  
+
+
+Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+   if (AI_var == 'true' && message.jid !== '919562803423-1627735504@g.us') {
+    
+        let regex1 = new RegExp('command')
+        let regex2 = new RegExp('name')
+        let regex3 = new RegExp('bot')
+        let regex4 = new RegExp('pinky')
+        let regex5 = new RegExp('afnanplk')
+        let regex6 = new RegExp('supporter')
+        let regex7 = new RegExp('Who are you')
+        let regex8 = new RegExp('nude')
+        let regex9 = new RegExp('Git')
+        let regex10 = new RegExp(Pinky.OA_NAME)
+        if (regex1.test(message.message)) {              
+            await message.client.sendMessage(message.jid,plk1, MessageType.text, {quoted: message.data })
+        } 
+        else if (regex2.test(message.message)) {
+           await message.client.sendMessage(message.jid,plk2 + Pinky.OB_NAME, MessageType.text, {quoted: message.data })
+        }
+         else if (regex3.test(message.message)) {
+            await message.client.sendMessage(message.jid,plk3, MessageType.text, {quoted: message.data })
+        }
+        else if (regex4.test(message.message)) {
+           await message.client.sendMessage(message.jid,plk4, MessageType.text, {quoted: message.data })
+        }
+        else if (regex5.test(message.message)) {
+          await message.client.sendMessage(message.jid,plk5, MessageType.text, {quoted: message.data })
+        }
+         else if (regex6.test(message.message)) {
+           await message.client.sendMessage(message.jid,plk6, MessageType.text, {quoted: message.data })
+        }
+         else if (regex7.test(message.message)) {
+           await message.client.sendMessage(message.jid,plk7, MessageType.text, {quoted: message.data })
+        }//created by afnanplk
+         else if (regex8.test(message.message)) {
+           await message.client.sendMessage(message.jid,plk8, MessageType.text, {quoted: message.data })
+        }
+         else if (regex9.test(message.message)) {
+   await message.client.sendMessage(message.jid,plk9, MessageType.text, {quoted: message.data })
+        }
+        else if (regex10.test(message.message)) {
+   await message.client.sendMessage(message.jid,Pinky.OA_REPLY, MessageType.text, {quoted: message.data })
+        }      
+   }
+}));
