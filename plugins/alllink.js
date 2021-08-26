@@ -12,6 +12,7 @@ const Config = require('../config')
 const Language = require('../language');
 const Lang = Language.getString('evaluators');
 const SLang = Language.getString('conventer');
+const Pinky = require('../pinky')
 const NLang = Language.getString('scrapers');
 const googleTTS = require('google-translate-tts');
 const Heroku = require('heroku-client');
