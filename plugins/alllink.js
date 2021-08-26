@@ -1,3 +1,8 @@
+/* codded by afnanplk
+use this git under copyright
+dont change credit
+*/
+
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
