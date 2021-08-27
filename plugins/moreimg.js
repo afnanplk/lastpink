@@ -243,7 +243,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=65654c74a7169de8`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: {quoted: message.data , mimetype: Mimetype.jpg,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
 
     }));
   
@@ -410,7 +410,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     var webimage = await axios.get(`https://xteam.xyz/videomaker/colorful?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {quoted: message.data , mimetype: Mimetype.jpg,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.video, {quoted: message.data , mimetype: Mimetype.video,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
 
     }));
 
