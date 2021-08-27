@@ -1,5 +1,5 @@
 /* Copyright (C) 2020 farhan-dqz.
-re codded by raashii
+re codded by raashii 
 ZARA V2
 */
 const fs = require('fs')
