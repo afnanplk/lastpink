@@ -27,7 +27,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var ttinullimage = await axios.get(`https://api.zeks.me/api/estetikpic?apikey=4PXD3f97yHgcO8aOD5GGIsEJB6l`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
   });
 }
