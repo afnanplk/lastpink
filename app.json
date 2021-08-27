@@ -26,6 +26,11 @@
             "required": false,
             "value": "true"
         },  
+         "GREETING_TYPE": {
+            "description": "If you like welcome message on gif write 'GIF' . Otherwise 'PP'",
+            "required": false,
+            "value": "GIF"
+        },  
         "GIF_WEL": {
             "description": "Welcome message video നിങ്ങൾക്ക് വേണ്ട welcome gif ന്റെ link കൊടുക്കുക .",
             "required": true,
