@@ -57,7 +57,7 @@ else if (Config.WORKTYPE == 'public') {
 		    '```Maghrib :``` *' + json.results.datetime[0].times.Maghrib + '*\n' +
         '```Isha    :``` *' + json.results.datetime[0].times.Isha + '*\n', MessageType.text);
 	    } catch {
-		    return await message.client.sendMessage(message.jid, renek, MessageType.text);
+		    return await message.client.sendMessage(message.jid, renek, MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
 	    }
     });
 }
