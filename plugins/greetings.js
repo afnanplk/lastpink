@@ -15,7 +15,7 @@ Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
     } else {
-        await message.client.sendMessage(message.jid,Lang.WELCOME_ALREADY_SETTED + hg.message + '```',MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.WELCOME_ALREADY_SETTED + hg.message + '```',MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
     }
 }));
 
@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: tru
     } else {
         if (match[1] === 'delete') { await message.client.sendMessage(message.jid,Lang.WELCOME_DELETED,MessageType.text); return await sql.deleteMessage(message.jid, 'welcome'); }
         await sql.setMessage(message.jid, 'welcome', match[1].replace(/#/g, '\n'));
-        return await message.client.sendMessage(message.jid,Lang.WELCOME_SETTED,MessageType.text)
+        return await message.client.sendMessage(message.jid,Lang.WELCOME_SETTED,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data})
     }
 }));
 
@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_GOODBYE,MessageType.text)
     } else {
-        await message.client.sendMessage(message.jid,Lang.GOODBYE_ALREADY_SETTED + hg.message + '```',MessageType.text);
+        await message.client.sendMessage(message.jid,Lang.GOODBYE_ALREADY_SETTED + hg.message + '```',MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data});
     }
 }));
 
@@ -44,6 +44,6 @@ Asena.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: tru
     } else {
         if (match[1] === 'delete') { await message.client.sendMessage(message.jid,Lang.GOODBYE_DELETED,MessageType.text); return await sql.deleteMessage(message.jid, 'goodbye'); }
         await sql.setMessage(message.jid, 'goodbye', match[1].replace(/#/g, '\n'));
-        return await message.client.sendMessage(message.jid,Lang.GOODBYE_SETTED,MessageType.text)
+        return await message.client.sendMessage(message.jid,Lang.GOODBYE_SETTED,MessageType.text, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data})
     }
 }));
