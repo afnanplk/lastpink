@@ -15,7 +15,7 @@ const Ln = "*SETVAR SETTING COMMADS* "
 
     await message.client.sendMessage(
   
-      message.jid,code, MessageType.text, {quoted: message.data , contextInfo: { forwardingScore: 1000, isForwarded: true}});
+      message.jid,code, MessageType.text, {quoted: message.data});
   
   }));
   }
