@@ -1912,7 +1912,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.png,contextInfo: { forwardingScore: 1000, isForwarded: true}, caption: Config.AFN})
+        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.png, caption: Config.AFN})
 
     }));
 }
