@@ -7,17 +7,22 @@ WhatsAsena - Yusuf Usta
 */
 
 const fs = require("fs");
+const os = require("os");
 const path = require("path");
 const events = require("./events");
-const Heroku = require('heroku-client');
 const chalk = require('chalk');
 const config = require('./config');
-const {WAConnection, MessageType, Presence} = require('@adiwajshing/baileys');
+const axios = require('axios');
+const Heroku = require('heroku-client');
+const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const {Message, StringSession, Image, Video} = require('./whatsasena/');
 const { DataTypes } = require('sequelize');
-const { getMessage } = require("./plugins/sql/greetings");
-const axios = require('axios');
+const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
+const simpleGit = require('simple-git');
+const git = simpleGit();
+const crypto = require('crypto');
+const nw = '```Blacklist Defected!```'
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
