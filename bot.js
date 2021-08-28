@@ -9,6 +9,7 @@ WhatsAsena - Yusuf Usta
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
+const Heroku = require('heroku-client');
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageType, Presence} = require('@adiwajshing/baileys');
@@ -17,6 +18,9 @@ const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
 const got = require('got');
+const heroku = new Heroku({
+    token: config.HEROKU.API_KEY
+});
 
 
 // Sql
