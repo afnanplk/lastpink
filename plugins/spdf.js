@@ -29,7 +29,7 @@ else if (Config.WORKTYPE == 'public') {
 
     var rashi = await axios.get(`https://api.html2pdf.app/v1/generate?url=${match[1]}&apiKey=begC4dFAup1b8LyRXxAfjetfqDg2uYx8PWmh9YJ59tTZXiUyh2Vs72HdYQB68vyc`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(rashi.data), MessageType.document, {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, filename: 'sspdf.pdf', mimetype: Mimetype.pdf});
+    await message.sendMessage(Buffer.from(rashi.data), MessageType.document, {quoted: message.data, filename: 'sspdf.pdf', mimetype: Mimetype.pdf});
 
   }));
 
