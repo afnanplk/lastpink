@@ -37,7 +37,7 @@ Asena.addCommand({pattern: 'compliment ?(.*)', fromMe: false, desc: Lang.CM_DESC
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n\n *compliment : 🤗 ' + Lang.CM +'* ```' + json.compliment + '```\n\n' , MessageType.text);
 	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, {quoted: message.data , contextInfo: { forwardingScore: 1000, isForwarded: true}});
+		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, {quoted: message.data});
 	}
 });
 }
