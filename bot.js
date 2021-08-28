@@ -26,7 +26,9 @@ const nw = '```Blacklist Defected!```'
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
-
+let baseURI = '/apps/' + config.HEROKU.APP_NAME;
+const Language = require('./language');
+const Lang = Language.getString('updater');
 
 // Sql
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
