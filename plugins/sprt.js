@@ -85,7 +85,7 @@ r_text[29] = "\nEnne kollathirikkan pattuo? illa alley?\n";
 r_text[30] = "motivate cheyaan aarkum kayyum ath cheyth kaanikkaaana paad.\n       -Zara Mwol";    
 var i = Math.floor(31*Math.random())
 
-await message.sendMessage(r_text[i]), {contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data};
+await message.sendMessage(r_text[i]), {quoted: message.data};
 
 }));
 }
