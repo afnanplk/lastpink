@@ -187,7 +187,7 @@ const array = ['Zara','Bye','bye','Poli','Dance','Gd mrng','Ara','Poyi','myr','p
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-   await message.client.sendMessage(message.jid, fs.readFileSync('./stickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, contextInfo: { forwardingScore: 1000, isForwarded: true }, quoted: message.data, ptt: false})
+   await message.client.sendMessage(message.jid, fs.readFileSync('./stickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
 }
 });
 }
