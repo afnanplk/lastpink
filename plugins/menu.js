@@ -17,13 +17,13 @@ Asena.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (as
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `╭──────────────────╮
-    *◩ ZᴀʀͥᴀͭᴍᷤWᷟᴏͤʟ ◪*
+       *◩ ZᴀʀͥᴀͭᴍᷤWᷟᴏͤʟ ◪*
 ╭──────────────────╯
 │
 │ ▢ *ᴏᴡɴᴇʀ* : ʀᴀᴀsʜɪɪ 
 │ ▢ *ᴠᴇʀsɪᴏɴ* : 2.1
 │ ▢ *ᴍᴏᴅᴇ* : ᴘᴜʙʟɪᴄ
-│ ▢ *ᴘʀᴇғɪx* : *# . !*
+│ ▢ *ᴘʀᴇғɪx* : *# / . ; !*
 │
 │     ▎▍▌▌▉▏▎▌▉▐▏▌▎
 │     ▎▍▌▌▉▏▎▌▉▐▏▌▎
