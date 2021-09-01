@@ -589,7 +589,8 @@
             "ARAT": "Searched Song:"
         },
         "gitlink": {
-            "GL": "To get github links."
+            "GL": "To get github links.",
+            "RASHI": "Its send menu list."
         },
         "info": {
             "INFO_DESC": "Show chat details",
