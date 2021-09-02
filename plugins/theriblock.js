@@ -39,7 +39,7 @@ if (config.LANG == 'ML') {
   ON = '*Theri Block Mode ON ആക്കി💌*'
 }
 
-Rashi.addCommand({ pattern: 'theriblock ?(.*)', fromMe: true, desc: rashi_desc, usage: '.autobio on / off' }, (async (message, match) => {
+Rashi.addCommand({ pattern: 'theriblock ?(.*)', fromMe: true, desc: rashi_desc, usage: '.theriblock on / off' }, (async (message, match) => {
   if (match[1] == 'off') {
     await heroku.patch(baseURI + '/config-vars', {
       body: {
