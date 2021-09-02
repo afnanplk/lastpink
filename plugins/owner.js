@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
             return;
         }
 
-        await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text);
+        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
         
     }));
 }
@@ -38,7 +38,7 @@ else if (Config.WORKTYPE == 'public') {
             return;
         }
 
-        await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------------------------', MessageType.text);
+        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
 
     }));
 }
