@@ -22,7 +22,6 @@ module.exports = {
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
-    THERI_BLOCK: process.env.THERI_BLOCK === undefined ? false : process.env.THERI_BLOCK,
     PM_BLOCK: process.env.PM_BLOCK === undefined ? false : process.env.PM_BLOCK,
     AFN: process.env.ALL_CAPTION === undefined ? 'Zara public bot' : process.env.ALL_CAPTION,
     ALL_LINK_BAN: process.env.ALL_LINK_BAN === undefined ? 'false' : process.env.ALL_LINK_BAN,
