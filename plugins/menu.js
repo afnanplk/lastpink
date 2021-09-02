@@ -36,10 +36,10 @@ if (hrs >= 12 && hrs <= 17) wish = '*ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞*'
 if (hrs >= 17 && hrs <= 19) wish = '*ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥*'
 if (hrs >= 19 && hrs <= 24) wish = '*ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙*'
 
-if (config.FULLEVA == 'true') eva = 'On'
-if (config.FULLEVA == 'false') eva = 'Off'
-if (config.AUTOBİO == 'true') auto_bio = 'On'
-if (config.AUTOBİO == 'false') auto_bio = 'Off'
+if (config.FULLEVA == 'true') eva = ' ᴏɴ'
+if (config.FULLEVA == 'false') eva = ' ᴏғғ'
+if (config.AUTOBİO == 'true') auto_bio = ' ᴏɴ'
+if (config.AUTOBİO == 'false') auto_bio = ' ᴏғғ'
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOTPLK + `
