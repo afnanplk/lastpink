@@ -61,11 +61,6 @@
             "required": true,
             "value": "false"
         },
-         "THERI_BLOCK": {
-            "description": "PM IL THERI VILICHAL BLOCK IF TRUE , just keep it false as this option is under maintanance ",
-            "required": true,
-            "value": "false"
-        },
         "AUTO_BİO": {
             "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
             "required": true,
