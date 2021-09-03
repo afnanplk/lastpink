@@ -17,14 +17,10 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+    Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) =>  {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
 
-            return;
-        }
-
-        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
+        await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text);
         
     }));
 }
@@ -33,12 +29,8 @@ else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '54218542512-1612300121@g.us') {
-
-            return;
-        }
-
-        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
+        
+        await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------------------------', MessageType.text);
 
     }));
 }
