@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) =>  {
 
 
-        await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text);
+        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
         
     }));
 }
@@ -30,7 +30,7 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
         
-        await message.client.sendMessage(message.jid,Config.PLK + '\n\n--------------------------', MessageType.text);
+        await message.client.sendMessage(message.jid,'*' + Config.BOTPLK + '*' + '  ```CREATED BY```' + Config.PLK + '\n\n' + '*•━━━━━━━━╼  ╾━━━━━━━•*', MessageType.text);
 
     }));
 }
