@@ -9,7 +9,7 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 
-if (Config.WORKTYPE == 'private') {
+if (config.WORKTYPE == 'private') {
 
 Rashi.addCommand({pattern: 'menu', fromMe: true, desc: 'it send bot menu'}, (async (message, match) => {
 
@@ -147,7 +147,7 @@ if (config.AUTOBİO == 'false') auto_bio = ' ᴏғғ'
 }));
 }
 
-else if (Config.WORKTYPE == 'public') {
+else if (config.WORKTYPE == 'public') {
 
 Rashi.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (async (message, match) => {
 
