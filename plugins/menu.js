@@ -153,8 +153,6 @@ Rashi.addCommand({pattern: 'menu', fromMe: false, desc: 'it send bot menu'}, (as
 
     var rashi = await axios.get(config.RASHI, { responseType: 'arraybuffer' })
  
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
     var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
 
     var wish = ''
