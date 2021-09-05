@@ -69,7 +69,7 @@
         "OWNER_NAME": {
             "description": "reply for .owner ! give your details, Use => default, to change back.",
             "required": false,
-            "value": "ZaraMwol Bot Created By Raashii"
+            "value": "Raashii"
        },    
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
