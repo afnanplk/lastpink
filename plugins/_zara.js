@@ -66,7 +66,8 @@ if (Config.WORKTYPE == 'public') {
         } 
         else {
             var CMD_HELP = '';
-            
+            var rashi = await axios.get(config.RASHI, { responseType: 'arraybuffer' });
+
             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
