@@ -42,6 +42,7 @@ module.exports = {
     GIFORPP: process.env.GREETING_TYPE === undefined ? 'GIF' : process.env.GREETING_TYPE,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     STICKERP: process.env.STICKER_REPLY === undefined ? false : convertToBool(process.env.STICKER_REPLY),
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? undefined : convertToBool(process.env.DISABLE_JID_BGM_FILTER),
     GIF_WEL: process.env.GIF_WEL === undefined ? 'https://i.imgur.com/iRCjokG.mp4' : process.env.GIF_WEL,
