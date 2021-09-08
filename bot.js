@@ -73,7 +73,6 @@ Array.prototype.remove = function() {
 };
 
 async function whatsAsena () {
-async function whatsAsena () {
     var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
