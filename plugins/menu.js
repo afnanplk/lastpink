@@ -7,6 +7,7 @@ const Rashi = require('../events');
 const config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
+const zara = require('../zara');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 
 if (config.WORKTYPE == 'private') {
@@ -181,7 +182,7 @@ if (config.AUTOBİO == 'false') auto_bio = ' ᴏғғ'
 │         *⌚` + time + `*
 │
 │ ▢ *ᴅᴇᴠᴇʟᴏʟᴇʀ* : ʀᴀᴀsʜɪɪ
-│ ▢ *ᴏᴡɴᴇʀ* :` + config.PLK + `
+│ ▢ *ᴏᴡɴᴇʀ* :` + zara.Z_OWNER + `
 │ ▢ *ᴠᴇʀsɪᴏɴ* : 2.1
 │ ▢ *ғᴜʟʟ ᴇᴠᴀ* : ` + eva + `
 │ ▢ *ᴀᴜᴛᴏ ʙɪᴏ* : ` + auto_bio + `
