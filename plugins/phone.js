@@ -26,10 +26,14 @@ await message.client.sendMessage(message.jid, {displayname: "Owner", vcard: Raas
 else if (config.WORKTYPE == 'public') {
 
 Rashi.addCommand({pattern: 'number', fromMe: false, desc: 'Its send owner number'}, (async (message, match) => {
+         var mode = ''
+if (Config.Z_OWNER == 'Raashii') mode = 'ᴅᴇᴠᴇʟᴏᴘᴇʀ : '
 
+else if mode = 'ᴏᴡɴᴇʀ : '
+            
             const Raashii = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + Config.Z_OWNER + '\n' //created afnanplk, please copy this with credit..
+            + 'FN:' + mode + Config.Z_OWNER + '\n' //created afnanplk, please copy this with credit..
             + 'ORG:Zara fam;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.Z_NUMBER + ':' + Config.Z_NUMBER + ' \n'
             + 'END:VCARD'
