@@ -7,18 +7,10 @@ const Lang = Language.getString('gitlink');
 
 Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.GL}, (async (message, match) => {
 
-    var r_text = new Array ();
-    
-    
-   
-  r_text[0] = "https://i.ibb.co/9rrnJ7g/20210815-080839.jpg";
-    
-    
-    var i = Math.floor(1*Math.random())
+    var rashi = await axios.get(config.RASHI, { responseType: 'arraybuffer' })
 
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
+    await message.sendMessage(Buffer(rashi.data), MessageType.image, {quoted: message.data , thumbnail: fs.readFileSync('./image/r.jpg'), mimetype: Mimetype.png, caption: `*≈≈≈≈≈≈≈Links ☟︎︎︎≈≈≈≈≈≈≈≈*
  
 
         *Github link        _https://tinyurl.com/yggyjfgf_*
