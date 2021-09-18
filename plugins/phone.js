@@ -29,7 +29,7 @@ Rashi.addCommand({pattern: 'number', fromMe: false, desc: 'Its send owner number
          var mode = ''
 if (Config.Z_OWNER == 'Raashii') mode = 'ᴅᴇᴠᴇʟᴏᴘᴇʀ : '
 
-else if mode = 'ᴏᴡɴᴇʀ : '
+else mode = 'ᴏᴡɴᴇʀ : '
             
             const Raashii = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
