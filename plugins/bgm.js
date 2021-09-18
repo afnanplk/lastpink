@@ -12,20 +12,27 @@ const heroku = new Heroku({
 });
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 
-   var l_dsc = ''
-    var alr_on = ''
-    var alr_off = ''
+    var l_dsc = ''
+    var s_dsc = ''
+    var STK_on = ''
+    var STK_off = ''
     var BGM_on = ''
     var BGM_off = ''
     if (config.LANG == 'EN') {
         l_dsc = 'turn on and turn of bgm. -bot owner command'
+        s_dsc = 'turn on and turn of STICKER. -bot owner command'
         BGM_on = 'bgm option turned on!'
         BGM_off = 'bgm option turned off'
+        STK_on = 'sticker option turned on!'
+        STK_off = 'sticker option turned off'
     }
     if (config.LANG == 'ML') {
-        l_dsc = 'turn on and turn of bgm. -bot owner command'        
-        BGM_on = 'bgm option turned on'
+        l_dsc = 'turn on and turn of bgm. -bot owner command'
+        s_dsc = 'turn on and turn of STICKER. -bot owner command'
+        BGM_on = 'bgm option turned on!'
         BGM_off = 'bgm option turned off'
+        STK_on = 'sticker option turned on!'
+        STK_off = 'sticker option turned off'
     }
     Asena.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
@@ -42,5 +49,23 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                     } 
                 });
                 await message.sendMessage(BGM_on)
+        }
+    }));
+
+    Asena.addCommand({pattern: 'sticker ?(.*)', fromMe: true, desc: s_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+        if (match[1] == 'off') {
+                await heroku.patch(baseURI + '/config-vars', { 
+                    body: { 
+                        ['STICKER_REPLY']: 'false'
+                    } 
+                });
+                await message.sendMessage(STK_off)
+        } else if (match[1] == 'on') {
+                await heroku.patch(baseURI + '/config-vars', { 
+                    body: { 
+                        ['STICKER_REPLY']: 'true'
+                    } 
+                });
+                await message.sendMessage(STK_on)
         }
     }));
