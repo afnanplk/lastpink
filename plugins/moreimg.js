@@ -224,7 +224,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=x2RjJIcchXaUJEO8gurQU0Kdrun&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=Raashii.life&text=${match[1]}`, { responseType: 'arraybuffer' })
 
   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -282,7 +282,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=Ekqqy3DmxtTHPAuA7inIHpxjFIC&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=Raashii.life&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -292,7 +292,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=Ekqqy3DmxtTHPAuA7inIHpxjFIC&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey=Raashii.life&text=${match[1]}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -342,7 +342,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
 
-    var webimage = await axios.get(`https://api.zeks.xyz/api/dropwater?apikey=x2RjJIcchXaUJEO8gurQU0Kdrun&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.xyz/api/dropwater?apikey=Raashii.life&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -368,7 +368,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
         
       var uri = encodeURI(match[1]);
   
-      var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&emoji='+ uri, { responseType: 'arraybuffer' })
+      var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=Raashii.life&emoji='+ uri, { responseType: 'arraybuffer' })
   
       await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), {quoted: message.data , mimetype: Mimetype.png, caption: Config.AFN})
   
@@ -428,7 +428,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/flowertext?apikey=g7fGXMAYaP9WMBAXSEgVAbnBu7f&text=(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/flowertext?apikey=Raashii.life&text=(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -448,7 +448,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/leavest?apikey=g7fGXMAYaP9WMBAXSEgVAbnBu7f&text=(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/leavest?apikey=Raashii.life&text=(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -483,7 +483,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.zeks.me/api/pubglogo?apikey=cjxJIn9eDletRHac3CG6CdvGxFH&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.me/api/pubglogo?apikey=Raashii.life&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -499,7 +499,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
         topText = split[0];
 }
 
-    var webimage = await axios.get(`https://api.zeks.me/api/phub?apikey=4PXD3f97yHgcO8aOD5GGIsEJB6l&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara+buat+foto+profil+di+whatsapp+menjadi+unik.jpg&username=${topText}&msg=${bottomText}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://api.zeks.me/api/phub?apikey=Raashii.life&img=https://1.bp.blogspot.com/-x8KhcOBG-yw/XiU4pi1yWVI/AAAAAAAADBA/gK8tsLyc1lQ808A348IKzDCjf6fUBKONwCLcBGAsYHQ/s1600/cara+buat+foto+profil+di+whatsapp+menjadi+unik.jpg&username=${topText}&msg=${bottomText}`, { responseType: 'arraybuffer' })
 
    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
