@@ -174,7 +174,7 @@ if (config.FULLEVA == 'false') eva = ' ᴏғғ'
 if (config.AUTOBİO == 'true') auto_bio = ' ᴏɴ'
 if (config.AUTOBİO == 'false') auto_bio = ' ᴏғғ'
 
-    await message.sendMessage(Buffer(rashi.data), MessageType.image, {mimetype: Mimetype.png, contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
+    await message.sendMessage(Buffer(rashi.data), MessageType.image, {mimetype: Mimetype.png, thumbnail: fs.readFileSync('./image/r.jpg'), contextInfo: {mentionedJid: message.mention}, caption: `╭──────────────────╮
    ` + config.BOTPLK + `
 ╭──────────────────╯
 │
