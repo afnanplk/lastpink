@@ -1,5 +1,5 @@
 /* Copyright (C) 2020 Yusuf Usta.
-PINKY VERSION 2
+ZARA VERSION 2
 */
 
 // Komutları burada tutacağız.
@@ -42,5 +42,6 @@ function addCommand(info, func) {
 
 module.exports = {
     addCommand: addCommand,
+    addCommand: addtozara,
     commands: Commands
 }
