@@ -22,7 +22,7 @@ await message.client.sendMessage(message.jid, {displayname: "Owner", vcard: Raas
   }));
 }
 
-if (Config.WORKTYPE == 'public') {
+else if (Config.WORKTYPE == 'public') {
 
 Rashi.addCommand({pattern: 'number', fromMe: false, desc: 'Its send owner number'}, (async (message, match) => {
 
