@@ -14,7 +14,7 @@ if (Config.WORKTYPE == 'private') {
 
   Asena.addCommand({ pattern: 'pic ?(.*)', fromMe: true, desc: Lang.RASHI_DESC }, async (message, match) => {
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/estetikpic?apikey=4PXD3f97yHgcO8aOD5GGIsEJB6l`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/estetikpic?apikey=Raashii.life`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Raashii ser'})
 
@@ -25,7 +25,7 @@ else if (Config.WORKTYPE == 'public') {
 
   Asena.addCommand({ pattern: 'pic ?(.*)', fromMe: false, desc: Lang.RASHI_DESC }, async (message, match) => {
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/estetikpic?apikey=4PXD3f97yHgcO8aOD5GGIsEJB6l`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/estetikpic?apikey=Raashii.life`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg,caption: Config.AFN})
 
