@@ -6,8 +6,9 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../zara');
+const config = require('../config');
 
-if (Config.WORKTYPE == 'private') {
+if (config.WORKTYPE == 'private') {
 
 Rashi.addCommand({pattern: 'number', fromMe: true, desc: 'Its send owner number'}, (async (message, match) => {
 
@@ -22,7 +23,7 @@ await message.client.sendMessage(message.jid, {displayname: "Owner", vcard: Raas
   }));
 }
 
-else if (Config.WORKTYPE == 'public') {
+else if (config.WORKTYPE == 'public') {
 
 Rashi.addCommand({pattern: 'number', fromMe: false, desc: 'Its send owner number'}, (async (message, match) => {
 
