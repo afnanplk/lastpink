@@ -42,6 +42,5 @@ function addCommand(info, func) {
 
 module.exports = {
     addCommand: addCommand,
-    addCommand: addtozara,
     commands: Commands
 }
