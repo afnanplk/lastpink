@@ -1,5 +1,5 @@
 /* # Exclusively from raashii
- */
+ */ 
 
 const Rashi = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
