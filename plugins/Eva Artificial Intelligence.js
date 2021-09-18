@@ -1,43 +1,4 @@
-/* Codded by Phaticusthiccy
-
-Eva, The Phaticusthiccy's Multifunctional Artificial Intelligence
-
-Eva AI has more than 50 Gigabyte dataset which including neural calculator,
-wikipedia data, sentiment analysis, Instagram workflow with neural cells.
-
-Thanks for Brainshop.ai for a rest connection with non-ethernet interaction
-Eva database. 
-
-Eva is a multimedia-powered artificial intelligence with its own virtual brain.
-Brainshop.ai allow access to load all external conversation for train Neural cells,
-from every user's historical conversations.
-
-Think twice about your choices about Eva. 
-May react differently in directed situations. This is completely natural and depends on users.
-All message history with Eva is not exported to any 3rd applications.
-Since Eva works entirely with deep learning, all responsibility belongs to the user.
-
-Arvix Articles About Eva's System:
->> https://arxiv.org/abs/2106.09461
->> https://arxiv.org/abs/2102.00287
->>https://arxiv.org/abs/2106.06157
-
-Wikipedia Articles About Eva'a System:
->> https://en.m.wikipedia.org/wiki/Optical_character_recognition
->> https://en.m.wikipedia.org/wiki/Text_mining
->> https://en.m.wikipedia.org/wiki/Natural_language_processing
-
-*/
-// ===================================================
-/*
-Eva has never been connected to the internet previously.
-The Brainshop.ai supports to javascript datasets, so thats way we cloned some datas from Eva to 
-Brainshop.ai. 
-
-Therefore, 100% efficiency cannot be obtained from Eva Artificial Intelligence.
-The voice recognition doesn't work with eva infrastructure.
-We are using wit.ai's voice recognition for voicy conversation.
-The all input datas must be english. We are using google translate before send users inputs.
+/*Fulleva By souravkl11 and Afnanplk
 */
 
 
@@ -66,13 +27,13 @@ let wk = conf.WORKTYPE == 'public' ? false : true
 var vtalk_dsc = ''
 var reply_eva = ''
 if (conf.LANG == 'TR') vtalk_dsc = 'Eva sesli sohbetini başlatır.', reply_eva = '*Herhangi Bir Sesli Mesaja Yanıt Verin!*'
-if (conf.LANG == 'EN') vtalk_dsc = 'Starts to pinky voice chat.', reply_eva = '*Reply to Any Voice Message!*'
+if (conf.LANG == 'EN') vtalk_dsc = 'Starts to Zara voice chat.', reply_eva = '*Reply to Any Voice Message!*'
 if (conf.LANG == 'AZ') vtalk_dsc = 'Eva səsli söhbətinə başlayır.', reply_eva = '*Hər hansı bir səsli mesaja cavab verin!*'
 if (conf.LANG == 'PT') vtalk_dsc = 'Começa o bate-papo por voz de Eva.', reply_eva = '*Responder a qualquer mensagem de voz!*'
 if (conf.LANG == 'RU') vtalk_dsc = 'Запускает голосовой чат Eva.', reply_eva = '*Ответьте на любое голосовое сообщение!*'
 if (conf.LANG == 'HI') vtalk_dsc = 'Eva ध्वनि चैट प्रारंभ करता है', reply_eva = '*किसी भी ध्वनि संदेश का उत्तर दें!*'
 if (conf.LANG == 'ES') vtalk_dsc = 'Comienza con el chat de voz de Eva.', reply_eva = '*¡Responde a cualquier mensaje de voz!*'
-if (conf.LANG == 'ML') vtalk_dsc = 'Eva വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
+if (conf.LANG == 'ML') vtalk_dsc = 'വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
 if (conf.LANG == 'ID') vtalk_dsc = 'Mulai obrolan suara Eva.', reply_eva = '*Balas Pesan Suara Apapun!*'
 
 const recognizeAudio = () => {
@@ -115,7 +76,7 @@ Asena.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteComman
             }
         } else { trmsg = finm }
         var uren = encodeURI(trmsg)
-        await axios.get('http://api.brainshop.ai/get?bid=157104&key=VzGieV1tp1IvxPl4&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+        await axios.get('http://api.brainshop.ai/get?bid=159572&key=usZjYZjRBVJcwN1S&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
             var fins = ''                           
             if (conf.LANG !== 'EN') {
                 ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -148,7 +109,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                             }
                         } else { trmsg = finm }
                         var uren = encodeURI(trmsg)
-                        await axios.get('http://api.brainshop.ai/get?bid=157104&key=VzGieV1tp1IvxPl4&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                        await axios.get('http://api.brainshop.ai/get?bid=159572&key=usZjYZjRBVJcwN1S&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                             var fins = ''                           
                             if (conf.LANG !== 'EN') {
                                 ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -176,7 +137,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                         }
                     } else { trmsg = finm }
                     var uren = encodeURI(trmsg)
-                    await axios.get('http://api.brainshop.ai/get?bid=157104&key=VzGieV1tp1IvxPl4&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                    await axios.get('http://api.brainshop.ai/get?bid=159572&key=usZjYZjRBVJcwN1S&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                         var fins = ''                           
                         if (conf.LANG !== 'EN') {
                             ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -202,7 +163,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
                     }
                 } else { trmsg = finm }
                 var uren = encodeURI(trmsg)
-                await axios.get('http://api.brainshop.ai/get?bid=157104&key=VzGieV1tp1IvxPl4&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
+                await axios.get('http://api.brainshop.ai/get?bid=159572&key=usZjYZjRBVJcwN1S&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
                     var fins = ''                           
                     if (conf.LANG !== 'EN') {
                         ceviri = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
@@ -242,7 +203,7 @@ Asena.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, 
                 if (ainame !== 'Asena') return;
         
                 var son = encodeURI(ssc)
-                await axios.get('http://api.brainshop.ai/get?bid=157104&key=VzGieV1tp1IvxPl4&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
+                await axios.get('http://api.brainshop.ai/get?bid=159572&key=usZjYZjRBVJcwN1S&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
                     var trmsg = ''
                     cevir = await translatte(response.data.cnt, {from: 'auto', to: conf.LANG});
                     if ('text' in cevir) {
@@ -271,70 +232,28 @@ var already_off = ''
 var succ_on = ''
 var succ_off = ''
 if (conf.LANG == 'TR') {
-    fulleva_dsc = 'Tam fonksiyonel Eva özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!'
-    already_on = 'Eva yapay zekası halihazırda tüm fonksiyonları etkin.'
-    already_off = 'Eva yapay zekası halihazırda yarı fonksiyonel çalışıyor.'
-    succ_on = 'Eva, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅'
-    succ_off = 'Eva, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
+    fulleva_dsc = 'Tam fonksiyonel Zara özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!'
+    already_on = 'Zara yapay zekası halihazırda tüm fonksiyonları etkin.'
+    already_off = 'Zara yapay zekası halihazırda yarı fonksiyonel çalışıyor.'
+    succ_on = 'Zara, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅'
+    succ_off = 'Zara, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
 }
 if (conf.LANG == 'EN') {
     fulleva_dsc = 'Activates full functional Zara features. Turn your account into a ai chatbot!'
     already_on = 'Zara artificial intelligence is already fully functional.'
     already_off = 'Zara artificial intelligence is currently running semi-functional.'
-    succ_on = 'ZaraMwol Opened Fully Functionally! Please wait a bit! ✅'
-    succ_off = 'ZaraMwol Set to Semi-Functional! Please wait a bit! ☑️'
-}
-if (conf.LANG == 'AZ') {
-    fulleva_dsc = 'Tam funksional Eva xüsusiyyətlərini aktivləşdirir. Hesabınızı bir chatbot halına gətirin!'
-    already_on = 'Eva süni intellekt onsuz da tam işlək vəziyyətdədir.'
-    already_off = 'Eva AI hazırda yarı funksionaldır.'
-    succ_on = 'Eva Tamamilə İşlədi! Xahiş edirəm bir az gözləyin! ✅'
-    succ_off = 'Eva Yarı İşləkdir! Xahiş edirəm bir az gözləyin! ☑️'
-}
-if (conf.LANG == 'RU') {
-    fulleva_dsc = 'Активирует полнофункциональные функции Eva. Превратите свой аккаунт в чат-бота!'
-    already_on = 'Искусственный интеллект Eva уже полностью функционален.'
-    already_off = 'Eva AI в настоящее время частично функционирует'
-    succ_on = 'Eva открылась полностью функционально! Подождите немного! ✅'
-    succ_off = 'Eva настроена на полуфункциональность! Подождите немного! ☑️'
-}
-if (conf.LANG == 'ES') {
-    fulleva_dsc = 'Activa todas las funciones funcionales de Eva. ¡Convierta su cuenta en un chatbot!'
-    already_on = 'La inteligencia artificial de Eva ya es completamente funcional.'
-    already_off = 'Eva AI es actualmente semi-funcional.'
-    succ_on = '¡Eva abrió completamente funcionalmente! ¡Por favor espere un poco! ✅'
-    succ_off = '¡Eva se pone semifuncional! ¡Por favor espere un poco! ☑️'
-}
-if (conf.LANG == 'HI') {
-    fulleva_dsc = 'पूरी तरह कार्यात्मक Eva सुविधाओं को सक्रिय करता है। अपने खाते को चैटबॉट में बदलें!'
-    already_on = 'ईवा आर्टिफिशियल इंटेलिजेंस पहले से ही पूरी तरह कार्यात्मक है'
-    already_off = 'ईवा एआई वर्तमान में अर्ध-कार्यात्मक है'
-    succ_on = 'ईवा पूरी तरह कार्यात्मक रूप से खुल गई! कृपया थोड़ी प्रतीक्षा करें! ✅'
-    succ_off = 'अर्ध-कार्यात्मक करने के लिए ईवा सेट! कृपया थोड़ी प्रतीक्षा करें! ☑️'
+    succ_on = 'Zara Opened Fully Functionally! Please wait a bit! ✅'
+    succ_off = 'Zara Set to Semi-Functional! Please wait a bit! ☑️'
 }
 if (conf.LANG == 'ML') {
-    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Eva സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
-    already_on = 'ഇവ കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
-    already_off = 'ഇവാ AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
-    succ_on = 'ഇവ പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
-    succ_off = 'സെമി-ഫങ്ഷണൽ ആയി ഇവാ സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
-}
-if (conf.LANG == 'PT') {
-    fulleva_dsc = 'Ativa recursos Eva totalmente funcionais. Transforme sua conta em um chatbot!'
-    already_on = 'A inteligência artificial Eva já está totalmente funcional.'
-    already_off = 'Eva AI está semi-funcional.'
-    succ_on = 'Eva abriu totalmente funcionalmente! Por favor espere um pouco! ✅'
-    succ_off = 'Eva definida como semi-funcional! Por favor espere um pouco! ☑️'
-}
-if (conf.LANG == 'ID') {
-    fulleva_dsc = 'Mengaktifkan fitur Eva yang berfungsi penuh. Ubah akun Anda menjadi chatbot!'
-    already_on = 'Kecerdasan buatan Eva sudah berfungsi penuh.'
-    already_off = 'Eva AI saat ini semi-fungsional.'
-    succ_on = 'Eva Dibuka Sepenuhnya Secara Fungsional! Harap tunggu sebentar! ✅'
-    succ_off = 'Eva Set ke Semi-Fungsional! Mohon tunggu sebentar! ☑️'
+    fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
+    already_on = 'കൃത്രിമബുദ്ധി ഇതിനകം പൂർണ്ണമായി പ്രവർത്തിക്കുന്നു.'
+    already_off = 'AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
+    succ_on = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
+    succ_off = 'സെമി-ഫങ്ഷണൽ ആയി സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
 }
 
-Asena.addCommand({ pattern: 'fulleva ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.fulleva on / off' }, (async (message, match) => {
+Asena.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
     var eva_status = `${conf.FULLEVA}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
