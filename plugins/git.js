@@ -2,6 +2,7 @@ const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const config = require('../config');
+const fs = require("fs")
 const Language = require('../language');
 const Lang = Language.getString('gitlink');
 
