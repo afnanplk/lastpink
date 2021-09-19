@@ -475,6 +475,11 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                 var plkpinky = await axios.get(config.GIF_WEL, { responseType: 'arraybuffer' })
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
                 await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data),MessageType.video, {mimetype: Mimetype.gif,thumbnail: fs.readFileSync('./image/wel.jpg'), caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
+            } else if (gb.message.includes('{gpp}')) {
+	var rashi = await message.client.getProfilePicture(message.jid) 
+	const raashii = await axios.get(rashi, {responseType: 'arraybuffer'})
+	var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
+	await conn.sendMessage(msg.key.remoteJid, Buffer.from(raashii.data), MessageType.image, { thumbnail: fs.readFileSync('./image/wel.jpg'), caption: gb.message.replace('{gpp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
             } else {
                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
                    await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
