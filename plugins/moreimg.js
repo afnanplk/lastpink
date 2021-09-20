@@ -428,7 +428,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/flowertext?apikey=Raashii.life&text=(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/flowertext?apikey=Raashii.life&text=$(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -438,7 +438,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=$(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
@@ -448,7 +448,7 @@ Asena.addCommand({pattern: 'break ?(.*)', fromMe: false, dontAddCommandList: tru
 
     if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://api.zeks.me/api/leavest?apikey=Raashii.life&text=(match[1])}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.zeks.me/api/leavest?apikey=Raashii.life&text=$(match[1])}`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, {quoted: message.data , mimetype: Mimetype.jpg, caption: Config.AFN})
 
