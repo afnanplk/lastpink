@@ -24,7 +24,7 @@ const Lang = Language.getString('filters');
 
 				if (pattern.test(message.message)) {
 
-					await message.client.sendMessage(message.jid,'Lang.' + a, MessageType.text, { quoted: message.data})
+					await message.client.sendMessage(message.jid,Lang.a, MessageType.text, { quoted: message.data})
 
 				}
 
