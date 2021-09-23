@@ -18,7 +18,6 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-var rashi = ''
 var ok = ''
 var error = ''
 
@@ -36,10 +35,10 @@ else if (config.LANG == 'ML') {
 
     Raashi.addCommand({ pattern: 'logo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-    if (match[1] === '')  return await message.client.sendMessage(message.jid, '/n link tha bro 🥲 /n');
+  
     
     
-    else if (match[1].includes === 'jpg' || match[1].includes === 'png') {
+    if (match[1].includes === 'jpg' || match[1].includes === 'png') {
 		await heroku.patch(baseURI + '/config-vars', {
 			body: {
                         ['LOGO_LINK']: match[1]
