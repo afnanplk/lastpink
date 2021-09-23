@@ -5,6 +5,7 @@ dont change credit
 */
 
 const Hisham = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
@@ -100,3 +101,44 @@ Hisham.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true 
 }));
 
 }
+    Asena.addCommand({ pattern: 'sudo ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.sudo *your number*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('𝖾𝗇𝗍𝖾𝗋 𝗎𝗋 𝗇𝗎𝗆𝖻𝖾𝗋 𝖺𝖿𝗍𝖾𝗋 𝖼𝗆𝗇𝖽')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['SUDO']: match[1]
+            }
+        });
+        await message.sendMessage("𝗌𝗎𝖽𝗈 𝗎𝗉𝖽𝖺𝗍𝖾𝖽 ✅")
+    }));
+
+    Asena.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by Raganork*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('𝗉𝗅𝖾𝖺𝗌𝖾 𝖾𝗇𝗍𝖾𝗋 𝖼𝖺𝗉𝗍𝗂𝗈𝗇 𝖺𝖿𝗍𝖾𝗋 𝖼𝗆𝗇𝖽')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['ALL_CAPTION']: match[1]
+            }
+        });
+        await message.sendMessage("𝖭𝖾𝗐 𝖢𝖺𝗉𝗍𝗂𝗈𝗇 𝖠𝖽𝖽𝖾𝖽 ✅")
+
+    }));
+
+
+    Asena.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('𝖤𝗇𝗍𝖾𝗋 𝖸𝗈𝗎𝗋 𝖡𝗈𝗍 𝗇𝖺𝗆𝖾 𝖺𝖿𝗍𝖾𝗋 𝖼𝗈𝗆𝗆𝖺𝗇𝖽')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['BOT_NAME']: match[1]
+            }
+        });
+        await message.sendMessage("𝖡𝗈𝗍 𝗇𝖺𝗆𝖾 𝖼𝗁𝖺𝗇𝗀𝖾𝖽 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 ✅")
+    }));
+
+    Asena.addCommand({ pattern: 'logo ?(.*)', fromMe: true, desc: 'change your bot logo', usage: '.botname *name* ' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('𝗉𝗅𝖾𝖺𝗌𝖾 𝖾𝗇𝗍𝖾𝗋 𝗅𝗂𝗇𝗄 🥴')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['LOGO_LINK']: match[1]
+            }
+        });
+        await message.sendMessage("𝖡𝗈𝗍 𝗅𝗈𝗀𝗈 𝖼𝗁𝖺𝗇𝗀𝖾𝖽 𝗌𝗎𝖼𝖼𝖾𝗌𝗌𝖿𝗎𝗅𝗅𝗒 ✅")
+    }));
