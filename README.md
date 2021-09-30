@@ -34,7 +34,7 @@ Project created by <a href="https://github.com/Ben-yawh">Ben yawh</a> to make it
 
   ### Simple Method
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@BenYawh/AnuMwol-Qr)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@BenYawh/AnuMwol-QR)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ben-yawh/AnuMwol)
      </div>
@@ -67,7 +67,7 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
 ## Developers
   <div align="center">
     
-  [![saidali](https://github.com/Ben-yawh.png?size=100)](https://github.com/Ben-yawh) |  [![Alien-Alfa](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
+  [![Ben-yawh](https://github.com/Ben-yawh.png?size=100)](https://github.com/Ben-yawh) |  [![Alien-Alfa](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
 ----|----|----
 [Saidali](https://github.com/farhan-dqz)  | [Alien-Alfa](https://github.com/Ben-yawh) | [afnanplk](https://github.com/afnanplk)
 Base, Bug Fixes, Modules | Modifiying  as   public | Bug Fixes, Modules
