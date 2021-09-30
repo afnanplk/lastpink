@@ -231,11 +231,11 @@
             "UPDATE": "*Your LiyaMol is completely up-to-date!*",
             "NEW_UPDATE": "*New update available for LiyaMol!*\n\n ```use .list for commands``` \n\n *ask support group before updating or your bot might stop working* \n *-if bot stop working you will have to re-deploy* \n\n Updates are:\n\n ",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "LiyaMol Updating...",
+            "UPDATING": "AnuMwol Updating...",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
             "UPDATED": "*✅ Successfully Updated!*",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*💬 LiyaMol Restarting Automatically!*",
+            "AFTER_UPDATE": "*💬 AnuMwol Restarting Automatically!*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
