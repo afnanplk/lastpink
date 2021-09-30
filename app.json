@@ -108,7 +108,7 @@
         "TAG_HEADER": {
             "description": "Heading when taging all",
             "required": false,
-            "value": "hear me friends"
+            "value": "Hello  \n\n ആരെങ്കിലും ഇവിടെ ഒണ്ടോ??"
         },
         "UNMUTE_MESSAGE": {
             "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
