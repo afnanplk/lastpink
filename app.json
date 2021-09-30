@@ -146,7 +146,11 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "i am alive  \n\n ```coded by ꜱͥᴀͭɪᴅᷤᴀᷟʟͤɪ```"
+            "value": "i am alive 
+
+ᴀᷝɴⷮᴜᷦᴍᴡᷟᴏⷷʟ
+
+ ```coded by 𝙱𝚎𝚗𝚈𝚊𝚠𝚑```"
         },
         "BAN_MESSAGE": {
             "description": "Customizable kick Message! Use => default, to change back.",
