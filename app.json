@@ -108,7 +108,7 @@
         "TAG_HEADER": {
             "description": "Heading when taging all",
             "required": false,
-            "value": "Hello  \n\n ആരെങ്കിലും ഇവിടെ ഒണ്ടോ??"
+            "value": "Hello  \n ആരെങ്കിലും ഇവിടെ ഒണ്ടോ??"
         },
         "UNMUTE_MESSAGE": {
             "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
@@ -146,7 +146,7 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "i am alive   \n\n ᴀᷝɴⷮᴜᷦᴍᴡᷟᴏⷷʟ  \n\n coded by 𝙱𝚎𝚗 𝚈𝚊𝚠𝚑"
+            "value": "i am alive   \n\n ᴀᷝɴⷮᴜᷦᴍᴡᷟᴏⷷʟ  \n coded by 𝙱𝚎𝚗 𝚈𝚊𝚠𝚑"
         },
         "BAN_MESSAGE": {
             "description": "Customizable kick Message! Use => default, to change back.",
