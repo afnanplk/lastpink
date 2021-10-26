@@ -35,6 +35,11 @@ If Repl.it not working Try Termux for Qr scanning.
 
      bash <(curl -L https://t.ly/tHxh)
 ```
+</p>
+</div>
+<div align="center">
+<details>
+    <summary><b>𝐏𝐑𝐄𝐒𝐒 𝐇𝐄𝐑𝐄 𝐓𝐎 𝐊𝐍𝐎𝐖 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐒</b></summary>
 
 ## F.A.Q
 Answer a few frequently asked questions;
