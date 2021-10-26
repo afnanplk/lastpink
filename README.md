@@ -1,94 +1,40 @@
-## Thanks for Everything 💖
-### We will always remember you..
-
 <div align="center">
-  <img border-radius: 15px src="https://i.ibb.co/9rrnJ7g/20210815-080839.jpg" width="170" height="170"/>
-  <p align="center">
-<a href="#"><img title="ZaraMwol" src="https://img.shields.io/badge/-ZaraMwol-pink?&style=for-the-badge"></a>
+<img 
+src="https://fontmeme.com/temporary/da6fa26084a2377945c921a220bc40f8.png" alt="img" width="310" height="30"/>
 </p>
-  </p>
-<p align="center">
-<a href="https://github.com/Raashii"><img title="Raashii" src="https://img.shields.io/badge/author-Raashii?color=blue&style=for-the-badge&logo=github"></a>
+        <img 
+src="https://tenor.com/view/school-live-cute-hello-anime-girl-yuki-takeya-gif-14815980.gif" alt="GIF" width="220" height="190"/>
+</p>
 
 </div>
 <p align="center">
-Project created by <a href="https://github.com/Raashii">Raashii</a> to make it public
+ᴘʀᴏᴊᴇᴄᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ <a href="https://github.com/Raashii">Raashii</a>
     <br>
        | © |
-        Reserved |
+        Reserved 
     <br> 
 </p>
 
-----
-
-  <p align="center">
-  <a href="https://github.com/Jokerser-x-Raashii/Zaramwol ">
-    <img src="https://img.shields.io/github/repo-size/Jokerser-x-Raashii/Zaramwol?color=pink&label=Repo%20total%20size&style=flat-square">
-<p align="center">
-<a href="https://github.com/Jokerser-x-Raashii/followers"><img title="Followers" src="https://img.shields.io/github/followers/Jokerser-x-Raashii?color=grey&style=plastic"></a>
-<a href="https://github.com/Jokerser-x-Raashii/Zaramwol/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Jokerser-x-Raashii/Zaramwol?color=grey&style=plastic"></a>
-<a href="https://github.com/Jokerser-x-Raashii/Zaramwol/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Jokerser-x-Raashii/Zaramwol?color=grey&style=plastic"></a>
-<a href="https://github.com/Jokerser-x-Raashii/Zaramwol/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Jokerser-x-Raashii/Zaramwol?label=Watchers&color=grey&style=flat-circle"></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-pink.svg"</a>
-
-```
-  
-Zara - Zara Userbot is Open Source software open to development. 
-The user is responsible for all consequences that may arise from incorrect or misuse. 
-Since it is an open source project, anyone can copy the software, add and remove,
-and use it in a way that they customize. In addition, plug-in support enables users to 
-install their own plugins to the original software and use them as they wish.
-Using the bot out of purpose will explicitly ban you.
-Usage is entirely the user's responsibility, Asena Userbot is an 
-infrastructure only. Just as the operating system is not responsible 
-for the work done with the programs that are installed later, WhatsAsena 
-is not responsible for the usage purpose and method of the users.
-Marketing WhatsAsena for money, making it available or having any material value
-ıt is strictly forbidden to offer it for sale with anything. All legal investigations that may arise
-the user is responsible.
-```
+#
 
 
-## Setup
 <div align="center">
 
-  ### <u> Simple Method <u>
-  
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=san+serif&color=%23F786EB&size=15&lines=We+Cloned+A+Base+Added+Some+Scripts;Now+U+Can+Deploy+Ur+Self%2C+Enjoy+The+Service)](https://git.io/typing-svg)
+<p align="center">
+
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Raashii/ZaraMwol)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://bit.ly/3G36is6)
-     </div>
-<br>
-<br >
-If Repl.it not working Try Termux for Qr scanning.Just Copy the Link Below in Termux
-```
-bash <(curl -L https://t.ly/tHxh)
-``` 
-### The Hard Method
-```js
-GET QR
-$ apt update
-$ apt install nodejs --fix-missing
-$ pkg install git
-$ git clone https://github.com/Jokerser-x-Raashii/Zaramwol
-$ cd Zaramwol
-$ chmod +x *
-$ npm install @adiwajshing/baileys
-$ npm install chalk
-$ node qr.js
-```
-      
-```js
-SETUP
-$ git clone https://github.com/Jokerser-x-Raashii/Zaramwol
-$ cd Zaramwol
-$ chmod +x *
-$ npm i
-$ node qr.js
-   // scan the qr using whatsapp web on your phone
-$ node bot.js
-```
+    
+ </div>
 
+```
+If Repl.it not working Try Termux for Qr scanning.
+    Just Copy the Link Below in Termux
+
+     bash <(curl -L https://t.ly/tHxh)
+```
 
 ## F.A.Q
 Answer a few frequently asked questions;
