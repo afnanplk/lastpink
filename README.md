@@ -15,8 +15,7 @@ src="https://tenor.com/view/school-live-cute-hello-anime-girl-yuki-takeya-gif-14
     <br> 
 </p>
 
-#
-
+- - -
 
 <div align="center">
 
@@ -27,7 +26,7 @@ src="https://tenor.com/view/school-live-cute-hello-anime-girl-yuki-takeya-gif-14
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://bit.ly/3G36is6)
     
-
+- - -
 </p>
 </div>
 <div align="center">
