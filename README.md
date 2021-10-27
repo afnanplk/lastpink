@@ -27,7 +27,18 @@ src="https://tenor.com/view/school-live-cute-hello-anime-girl-yuki-takeya-gif-14
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://bit.ly/3G36is6)
     
- </div>
+
+</p>
+</div>
+<div align="center">
+<a href="https://zaramwol.yolasite.com/">   𒊹︎︎︎𝐏𝐑𝐄𝐒𝐒 𝐇𝐄𝐑𝐄 𝐓𝐎 𝐕𝐈𝐒𝐈𝐓 𝐎𝐔𝐑 𝐖𝐄𝐁𝐒𝐈𝐓𝐄</a>
+    <br>
+</p>
+<div align="center">
+<details>
+    <summary><b>𝐏𝐑𝐄𝐒𝐒 𝐇𝐄𝐑𝐄 𝐓𝐎 𝐊𝐍𝐎𝐖 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐒</b></summary>
+
+</p>
 
 ```
 If Repl.it not working Try Termux for Qr scanning.
@@ -35,12 +46,6 @@ If Repl.it not working Try Termux for Qr scanning.
 
      bash <(curl -L https://t.ly/tHxh)
 ```
-</p>
-</div>
-<div align="center">
-<details>
-    <summary><b>𝐏𝐑𝐄𝐒𝐒 𝐇𝐄𝐑𝐄 𝐓𝐎 𝐊𝐍𝐎𝐖 𝐌𝐎𝐑𝐄 𝐓𝐇𝐈𝐍𝐆𝐒</b></summary>
-
 ## F.A.Q
 Answer a few frequently asked questions;
 ### Can you read my messages?
